@@ -1,12 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Portfolio Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to my personal portfolio website! This project showcases my skills, projects, and achievements as a developer. It is built using **React**, **Tailwind CSS**, and **Vite**, with animations powered by **Framer Motion**.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Design**: The website is fully responsive and works seamlessly on all devices.
+- **Interactive Animations**: Smooth animations and hover effects using Framer Motion.
+- **Particle Background**: Dynamic particle effects in the background using `tsparticles`.
+- **Project Showcase**: A dedicated section to highlight my projects with descriptions and images.
+- **About Me**: A section that introduces me, my skills, and my journey in software development.
+- **Contact Call-to-Action**: A clear call-to-action to encourage visitors to get in touch.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Vite**: A fast build tool for modern web development.
+- **Framer Motion**: A production-ready motion library for React.
+- **TSParticles**: A lightweight library for creating particle effects.
+
+
+## Live Demo
+
+Check out the live version of the portfolio: [Portfolio Live Demo](https://your-portfolio-url.com)
