@@ -3,6 +3,7 @@
 # Portfolio Website
 
 (The wrong name was intentional haha)
+
 Welcome to my personal portfolio website! This project showcases my skills, projects, and achievements as a developer. It is built using **React**, **Tailwind CSS**, and **Vite**, with animations powered by **Framer Motion**.
 
 ## Features
