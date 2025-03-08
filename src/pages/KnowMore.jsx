@@ -41,12 +41,12 @@ const KnowMore = () => {
         <h2>Languages I Know</h2>
         <div className="languages-list">
           {[
-            { name: 'Java', icon: '/images/java.png' },
-            { name: 'Python', icon: '/images/python.png' },
-            { name: 'C++', icon: '/images/c++.png' },
-            { name: 'C', icon: '/images/c.png' },
-            { name: 'HTML', icon: '/images/html.png' },
-            { name: 'CSS', icon: '/images/css.png' },
+            { name: 'Java', icon: '/portfolio/images/java.png' },
+            { name: 'Python', icon: '/portfolio/images/python.png' },
+            { name: 'C++', icon: '/portfolio/images/c++.png' },
+            { name: 'C', icon: '/portfolio/images/c.png' },
+            { name: 'HTML', icon: '/portfolio/images/html.png' },
+            { name: 'CSS', icon: '/portfolio/images/css.png' },
           ].map((language, index) => (
             <motion.div
               key={language.name}
@@ -73,11 +73,11 @@ const KnowMore = () => {
         <h2>Technologies I Use</h2>
         <div className="technologies-list">
           {[
-            { name: 'Intellij', icon: '/images/intellij.png' },
-            { name: 'ChatGPT', icon: '/images/chatgpt.png' },
-            { name: 'VS Code', icon: '/images/vscode.png' },
-            { name: 'Ubuntu', icon: '/images/ubuntu.png' },
-            { name: 'GitHub', icon: '/images/github.png' },
+            { name: 'Intellij', icon: '/portfolio/images/intellij.png' },
+            { name: 'ChatGPT', icon: '/portfolio/images/chatgpt.png' },
+            { name: 'VS Code', icon: '/portfolio/images/vscode.png' },
+            { name: 'Ubuntu', icon: '/portfolio/images/ubuntu.png' },
+            { name: 'GitHub', icon: '/portfolio/images/github.png' },
           ].map((technology, index) => (
             <motion.div
               key={technology.name}
@@ -106,12 +106,12 @@ const KnowMore = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.1, delay: 0.1}}
+            transition={{ duration: 0.1, delay: 0.1 }}
             whileHover={{ scale: 1.05 }}
             className="achievement"
           >
             <img
-              src="/images/qiskit-global-summer-school-2024-quantum-excellence.png"
+              src="/portfolio/images/qiskit-global-summer-school-2024-quantum-excellence.png"
               alt="Achievement 1"
               className="achievement-icon"
             />
