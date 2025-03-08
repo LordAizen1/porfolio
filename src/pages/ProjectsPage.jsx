@@ -5,19 +5,19 @@ const ProjectsPage = () => {
   const projects = [
     {
       title: 'Dr-WebDev',
-      image: '/images/dr-webdev-high-resolution-logo 1.png',
+      image: '/porfolio/images/dr-webdev-high-resolution-logo 1.png',
       description:
         'Dr-WebDev is one of the best side projects I\'ve made. <br /> Creating this project was like hitting two birds with one stone. <br /> I got to learn front-end development and let people know about me. 🤗',
     },
     {
       title: 'StickHero',
-      image: '/images/stickhero.png',
+      image: '/porfolio/images/stickhero.png',
       description:
         'A replica of the game Stick Hero using JavaFX, implementing different concepts of OOPS, <br /> error-checking, and testing using JUnitTest.',
     },
     {
       title: 'Dungeon-Shell',
-      image: '/images/cmd.png',
+      image: '/porfolio/images/cmd.png',
       description:
         'A simple shell program called "Dungeon" written in C. SIGINT signal handling <br /> with lots of supported shell commands, pipeline handling, and maintaining <br /> a record of process\'s PID, start time, and end time, which gets shown at exit.',
     },
