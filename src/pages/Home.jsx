@@ -73,7 +73,7 @@ const Home = () => {
           </div>
         </motion.section>
 
-        {/* Call to Action Section */}
+        {/* Call to Action Section (Removed the button) */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,14 +85,7 @@ const Home = () => {
             Whether you're looking to collaborate on a project, hire a developer, or just want to chat about tech, 
             I'd love to hear from you!
           </p>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="#last-footer"
-            className="cta-button"
-          >
-            Get In Touch
-          </motion.a>
+          {/* Removed the "Get In Touch" button */}
         </motion.section>
       </div>
     </motion.div>
