@@ -41,12 +41,12 @@ const KnowMore = () => {
         <h2>Languages I Know</h2>
         <div className="languages-list">
           {[
-            { name: 'Java', icon: '/portfolio/images/java.png' },
-            { name: 'Python', icon: '/portfolio/images/python.png' },
-            { name: 'C++', icon: '/portfolio/images/c++.png' },
-            { name: 'C', icon: '/portfolio/images/c.png' },
-            { name: 'HTML', icon: '/portfolio/images/html.png' },
-            { name: 'CSS', icon: '/portfolio/images/css.png' },
+            { name: 'Java', icon: '/porfolio/images/java.png' },
+            { name: 'Python', icon: '/porfolio/images/python.png' },
+            { name: 'C++', icon: '/porfolio/images/c++.png' },
+            { name: 'C', icon: '/porfolio/images/c.png' },
+            { name: 'HTML', icon: '/porfolio/images/html.png' },
+            { name: 'CSS', icon: '/porfolio/images/css.png' },
           ].map((language, index) => (
             <motion.div
               key={language.name}
@@ -73,11 +73,11 @@ const KnowMore = () => {
         <h2>Technologies I Use</h2>
         <div className="technologies-list">
           {[
-            { name: 'Intellij', icon: '/portfolio/images/intellij.png' },
-            { name: 'ChatGPT', icon: '/portfolio/images/chatgpt.png' },
-            { name: 'VS Code', icon: '/portfolio/images/vscode.png' },
-            { name: 'Ubuntu', icon: '/portfolio/images/ubuntu.png' },
-            { name: 'GitHub', icon: '/portfolio/images/github.png' },
+            { name: 'Intellij', icon: '/porfolio/images/intellij.png' },
+            { name: 'ChatGPT', icon: '/porfolio/images/chatgpt.png' },
+            { name: 'VS Code', icon: '/porfolio/images/vscode.png' },
+            { name: 'Ubuntu', icon: '/porfolio/images/ubuntu.png' },
+            { name: 'GitHub', icon: '/porfolio/images/github.png' },
           ].map((technology, index) => (
             <motion.div
               key={technology.name}
@@ -111,7 +111,7 @@ const KnowMore = () => {
             className="achievement"
           >
             <img
-              src="/portfolio/images/qiskit-global-summer-school-2024-quantum-excellence.png"
+              src="/porfolio/images/qiskit-global-summer-school-2024-quantum-excellence.png"
               alt="Achievement 1"
               className="achievement-icon"
             />
