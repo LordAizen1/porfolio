@@ -104,12 +104,11 @@ const Home = () => {
 
       {/* Resume Modal */}
       <Modal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)}>
-        <iframe
-          src="/porfolio/public/Md_Kaif.pdf" // Update this path to your resume file
-          title="Mohammad Kaif's Resume"
-          width="100%"
-          height="390px"
-          style={{ border: 'none' }}
+        <img
+          className='resume-image'
+          src="/porfolio/public/images/Md_Kaif.jpg" // Update this path to your resume image
+          alt="Mohammad Kaif's Resume"
+          style={{ width: '100%', height: 'auto', maxHeight: '100vh' }} // Adjust size as needed
         />
       </Modal>
     </motion.div>
