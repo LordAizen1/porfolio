@@ -106,7 +106,7 @@ const Home = () => {
       <Modal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)}>
         <img
           className='resume-image'
-          src="/porfolio/public/images/Md_Kaif.jpg" // Update this path to your resume image
+          src="/porfolio/images/Md_Kaif.png" // Update this path to your resume image
           alt="Mohammad Kaif's Resume"
           style={{ width: '100%', height: 'auto', maxHeight: '100vh' }} // Adjust size as needed
         />
