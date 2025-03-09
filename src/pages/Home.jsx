@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import ParticlesComponent from '../components/Particles';
+import Modal from '../components/Modal'; // Import the Modal component
 
 const Home = () => {
+  const [isResumeOpen, setIsResumeOpen] = useState(false); // State to control modal visibility
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -36,7 +39,7 @@ const Home = () => {
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className="highlights"
         >
           <h2>What I Do</h2>
@@ -62,7 +65,7 @@ const Home = () => {
                 key={card.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 + index * 0.2 }}
+                transition={{ duration: 0.1, delay: 0.1 + index * 0.1 }}
                 whileHover={{ scale: 1.05 }}
                 className="card"
               >
@@ -73,7 +76,7 @@ const Home = () => {
           </div>
         </motion.section>
 
-        {/* Call to Action Section (Removed the button) */}
+        {/* Call to Action Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,9 +88,30 @@ const Home = () => {
             Whether you're looking to collaborate on a project, hire a developer, or just want to chat about tech, 
             I'd love to hear from you!
           </p>
-          {/* Removed the "Get In Touch" button */}
+          {/* Add the View Resume Button */}
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            whileHover={{ scale: 1.05 }}
+            className="resume-button"
+            onClick={() => setIsResumeOpen(true)} // Open the modal
+          >
+            View Resume
+          </motion.button>
         </motion.section>
       </div>
+
+      {/* Resume Modal */}
+      <Modal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)}>
+        <iframe
+          src="/porfolio/public/Md_Kaif.pdf" // Update this path to your resume file
+          title="Mohammad Kaif's Resume"
+          width="100%"
+          height="390px"
+          style={{ border: 'none' }}
+        />
+      </Modal>
     </motion.div>
   );
 };

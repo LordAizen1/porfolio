@@ -128,6 +128,106 @@ body {
   background-color: #4093A6;
 }
 
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #58A4B0; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-family: 'Gilroy', sans-serif; 
+}
+
+.resume-button:hover {
+  background-color: #A9BCD0; /* Darker blue on hover */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; /* Increase width to 90% of the screen */
+  height: 90%; /* Increase height to 90% of the screen */
+  max-width: 700px; /* Optional: Set a max-width for very large screens */
+  max-height: 100vh; /* Optional: Set a max-height relative to the viewport height */
+  overflow: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%; /* Take up full width of the modal */
+  height: 100%; /* Take up full height of the modal */
+  border: none; /* Remove default border */
+}
+
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #58A4B0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Gilroy', sans-serif; 
+}
+
+.close-button:hover {
+  background-color: #A9BCD0;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #58A4B0;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0; /* Hidden by default */
+}
+
+.scroll-to-top.visible {
+  opacity: 1; /* Visible when scrolled down */
+}
+
+.scroll-to-top:hover {
+  background-color: #4093A6;
+}
+
 /* Navigation */
 nav {
   border: 1px solid #58A4B0;
