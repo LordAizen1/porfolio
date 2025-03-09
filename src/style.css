@@ -165,9 +165,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 90%; /* Increase width to 90% of the screen */
-  height: 90%; /* Increase height to 90% of the screen */
+  height: auto; /* Adjust height based on content */
   max-width: 700px; /* Optional: Set a max-width for very large screens */
-  max-height: 100vh; /* Optional: Set a max-height relative to the viewport height */
+  max-height: 90vh; /* Optional: Set a max-height relative to the viewport height */
   overflow: auto;
   position: relative;
   display: flex;
@@ -175,10 +175,9 @@ body {
   align-items: center;
 }
 
-iframe {
-  width: 100%; /* Take up full width of the modal */
-  height: 100%; /* Take up full height of the modal */
-  border: none; /* Remove default border */
+.resume-image {
+  border: 2px solid #58A4B0; /* Add a border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
 
 
