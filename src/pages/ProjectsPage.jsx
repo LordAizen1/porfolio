@@ -7,7 +7,7 @@ const ProjectsPage = () => {
       title: 'Dr-WebDev',
       image: '/porfolio/images/dr-webdev-high-resolution-logo 1.png',
       description:
-        'Dr-WebDev is one of the best side projects I\'ve made. <br /> Creating this project was like hitting two birds with one stone. <br /> I got to learn front-end development and let people know about me. 🤗',
+        'Dr-WebDev is one of the fun projects I\'ve made. <br /> Creating this project was like hitting two birds with one stone. <br /> I got to learn front-end development and let people know about me.',
     },
     {
       title: 'StickHero',
