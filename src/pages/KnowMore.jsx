@@ -26,9 +26,7 @@ const KnowMore = () => {
         className="centered"
       >
         <strong className="imp">Who Am I?</strong>
-        <p id="me">
-          I am Mohammad Kaif, an undergraduate student at the prestigious Indraprasth Institute of Information and Technology, majoring in Computer Science and Engineering. I am passionate about software development/engineering and currently in the process of learning. I aspire to reach a level where I can confidently get a role of an SDE.
-        </p>
+        <p id="me"> I am an undergraduate student at the prestigious Indraprastha Institute of Information and Technology, Delhi, majoring in Computer Science and Engineering. I am passionate about software development and engineering, with a particular interest in web development. I enjoy building dynamic, user-friendly websites and applications, and I am currently honing my skills in front-end and back-end technologies such as HTML, CSS, JavaScript, React, Node.js, etc. Alongside web development, I am also exploring other areas of software engineering to broaden my expertise.</p>
       </motion.article>
 
       {/* Languages Section */}
@@ -78,6 +76,9 @@ const KnowMore = () => {
             { name: 'VS Code', icon: '/porfolio/images/vscode.png' },
             { name: 'Ubuntu', icon: '/porfolio/images/ubuntu.png' },
             { name: 'GitHub', icon: '/porfolio/images/github.png' },
+            { name: 'ReactJS', icon: '/porfolio/images/reacjs.png' },
+            { name: 'Firebase', icon: '/porfolio/images/firebase.png' },
+            { name: 'NodeJS', icon: '/porfolio/images/nodejs.png' }
           ].map((technology, index) => (
             <motion.div
               key={technology.name}
