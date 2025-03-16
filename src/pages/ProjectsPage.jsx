@@ -21,9 +21,12 @@ const ProjectsPage = () => {
       description:
         'A simple shell program called "Dungeon" written in C. SIGINT signal handling <br /> with lots of supported shell commands, pipeline handling, and maintaining <br /> a record of process\'s PID, start time, and end time, which gets shown at exit.',
     },
-    // {
-    //   title: 'Cryptographix'
-    // }
+    {
+      title: 'Employee Management System',
+      image: '/porfolio/images/ems.png',
+      description: 
+      'A simple employee management system featuring an admin login as well as an employee, both having their own dashboard, admin can create tasks, see status of tasks, employee can see their active, completed etc. tasks.'
+    }
   ];
 
   return (
@@ -64,7 +67,6 @@ const ProjectsPage = () => {
               className="centered"
               dangerouslySetInnerHTML={{ __html: project.description }}
             />
-            {/* Uncomment this if you want to add a GitHub link */}
             {/* <a href="https://github.com/LordAizen1/project1" target="_blank">View on GitHub</a> */}
           </motion.article>
         ))}
