@@ -20,7 +20,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
       <Footer />
-      <ScrollToTopButton /> {/* Add the ScrollToTopButton here */}
+      <ScrollToTopButton />
     </Router>
   );
 }
