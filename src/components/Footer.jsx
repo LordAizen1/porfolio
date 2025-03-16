@@ -1,8 +1,35 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Set isVisible to true when the footer is in view, false when it's out of view
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 1, // Adjust this value to control when the animation triggers
+      }
+    );
+
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
+    return () => {
+      if (footerRef.current) {
+        observer.unobserve(footerRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <footer>
+    <footer ref={footerRef} className={isVisible ? 'footer-visible' : ''}>
       <div id="con">
         <a className="contact mail-me" href="mailto:mohdkaif2003@gmail.com">
           <img src="/porfolio/images/mail.png" width="17.6" alt="Email Icon" />
