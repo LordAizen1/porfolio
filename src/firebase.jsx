@@ -1,28 +1,22 @@
-// Import Firebase SDK
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
-import { getDatabase } from "firebase/database"; // Import Realtime Database
+import { getDatabase } from "firebase/database";
 
-// 🔹 Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDcrDlsaitBvhKHz5C3uFEgFMi7ItdaHgU",
-  authDomain: "my-portfolio-4f59c.firebaseapp.com",
-  databaseURL: "https://my-portfolio-4f59c-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "my-portfolio-4f59c",
-  storageBucket: "my-portfolio-4f59c.firebasestorage.app",
-  messagingSenderId: "953312166074",
-  appId: "1:953312166074:web:a5ca9bde6424e3efb28283",
-  measurementId: "G-ES2RCWPHHS"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// 🔹 Initialize Firebase App
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+const database = getDatabase(app);
 
-// 🔹 Initialize Firebase services
-const db = getFirestore(app); // Firestore Database
-const auth = getAuth(app); // Authentication
-const database = getDatabase(app); // Realtime Database ✅
-
-// 🔹 Export Firebase services
 export { db, auth, database };
