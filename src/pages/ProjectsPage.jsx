@@ -10,6 +10,13 @@ const ProjectsPage = () => {
         'Dr-WebDev is one of the fun projects I\'ve made. <br /> Creating this project was like hitting two birds with one stone. <br /> I got to learn front-end development and let people know about me.',
     },
     {
+      title: 'VeilCode Labs',
+      image: '/porfolio/images/VeilCode_Labs.png',
+      description:
+        "An educational cryptography platform built with React.js and Firebase. Features course materials, labs, and research resources with admin CRUD functionality. Developed under Dr. Ravi Anand at IIIT Delhi. The project aims to enhance cryptography education through a structured and accessible digital learning environment.",
+      link: 'https://lordaizen1.github.io/cryptolab/'
+    },    
+    {
       title: 'StickHero',
       image: '/porfolio/images/stickhero.png',
       description:
@@ -26,7 +33,7 @@ const ProjectsPage = () => {
       image: '/porfolio/images/ems.png',
       description: 
       'A simple employee management system featuring an admin login as well as an employee, both having their own dashboard, admin can create tasks, see status of tasks, employee can see their active, completed etc. tasks.'
-    }
+    },
   ];
 
   return (
@@ -58,16 +65,24 @@ const ProjectsPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.1, delay: 0.1 + index * 0.1 }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03 }}
             className="project"
           >
-            <h2>{project.title}</h2>
-            <img src={project.image} alt={project.title} width="300" />
-            <p
-              className="centered"
-              dangerouslySetInnerHTML={{ __html: project.description }}
-            />
-            {/* <a href="https://github.com/LordAizen1/project1" target="_blank">View on GitHub</a> */}
+            <h2>
+              {project.link ? (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                  {project.title}
+                </a>
+              ) : (
+                project.title
+              )}
+            </h2>
+            <div className="project-image-container">
+              <img src={project.image} alt={project.title} className="project-image" />
+            </div>
+            <div className="project-description">
+              <p dangerouslySetInnerHTML={{ __html: project.description }} />
+            </div>
           </motion.article>
         ))}
       </motion.section>
