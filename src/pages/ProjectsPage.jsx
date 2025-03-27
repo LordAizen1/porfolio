@@ -11,7 +11,7 @@ const ProjectsPage = () => {
     },
     {
       title: 'VeilCode Labs',
-      image: '/porfolio/images/VeilCode_Labs.png',
+      image: '/porfolio/images/veilcodelabs.png',
       description:
         "An educational cryptography platform built with React.js and Firebase. Features course materials, labs, and research resources with admin CRUD functionality. Developed under Dr. Ravi Anand at IIIT Delhi. The project aims to enhance cryptography education through a structured and accessible digital learning environment.",
       link: 'https://lordaizen1.github.io/cryptolab/'
