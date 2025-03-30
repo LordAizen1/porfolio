@@ -37,7 +37,7 @@ const KnowMore = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="languages"
       >
-        <h2>Languages I Know</h2>
+        <h2>Languages and Markup I Know</h2>
         <div className="languages-list">
           {[
             { name: 'Java', icon: '/porfolio/images/java.png' },
@@ -46,6 +46,7 @@ const KnowMore = () => {
             { name: 'C', icon: '/porfolio/images/c.png' },
             { name: 'HTML', icon: '/porfolio/images/html.png' },
             { name: 'CSS', icon: '/porfolio/images/css.png' },
+            { name: 'JS', icon: '/porfolio/images/js.png'}
           ].map((language, index) => (
             <motion.div
               key={language.name}
