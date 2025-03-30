@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ParticlesComponent from '../components/Particles';
 
 const KnowMore = () => {
   return (
@@ -9,7 +10,7 @@ const KnowMore = () => {
       transition={{ duration: 0.5 }}
       className="know-more"
     >
-      {/* Title */}
+      <ParticlesComponent />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,7 +27,7 @@ const KnowMore = () => {
         className="centered"
       >
         <strong className="imp">Who Am I?</strong>
-        <p id="me"> I am an undergraduate student at the prestigious Indraprastha Institute of Information and Technology, Delhi, majoring in Computer Science and Engineering. I am passionate about software development and engineering, with a particular interest in web development. I enjoy building dynamic, user-friendly websites and applications, and I am currently honing my skills in front-end and back-end technologies such as HTML, CSS, JavaScript, React, Node.js, etc. Alongside web development, I am also exploring other areas of software engineering to broaden my expertise.</p>
+        <p id="me"> I am an undergraduate student at the prestigious Indraprastha Institute of Information and Technology, Delhi, majoring in Computer Science and Engineering. I am passionate about software development and engineering, with a some interest in web development. I enjoy building dynamic, user-friendly websites and applications, and I am currently honing my skills in relevent fields such as HTML, CSS, JavaScript, React, Node.js, etc. Alongside web development, I am also exploring other areas of software engineering to broaden my expertise.</p>
       </motion.article>
 
       {/* Languages Section */}
