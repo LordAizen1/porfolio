@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <img
         className="logo"
-        src="/porfolio/images/dr-webdev-high-resolution-logo 1.png" // Use absolute path
+        src="/porfolio/images/dr-webdev-high-resolution-logo-transparent.png" // Use absolute path
         alt="Dr-WebDev Logo"
         width="300"
       />
