@@ -50,6 +50,9 @@ body {
   z-index: -1;
 }
 
+.faint-text{
+  opacity: 0.5;
+}
 .home-content {
   position: relative;
   max-width: 800px;
@@ -555,7 +558,7 @@ footer {
 .know-more .technology img,
 .know-more .achievement img {
   width: 80px;
-  height: 80px;
+  height: auto;
   margin-bottom: 10px;
 }
 

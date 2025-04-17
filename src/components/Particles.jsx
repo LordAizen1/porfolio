@@ -5,7 +5,7 @@ const TerrainBackground = () => {
   const animationRef = useRef(null);
   const entitiesRef = useRef([]);
 
-  // Terrain class
+  // Terrain class (unchanged)
   class Terrain {
     constructor(options, width, height) {
       options = options || {};
@@ -13,24 +13,22 @@ const TerrainBackground = () => {
       this.ctx = this.canvas.getContext('2d');
       this.scrollDelay = options.scrollDelay || 90;
       this.lastScroll = Date.now();
-      this._width = width; // Changed from const to property
-      this._height = height; // Changed from const to property
+      this._width = width;
+      this._height = height;
 
       this.canvas.width = width;
       this.canvas.height = height;
       this.fillStyle = options.fillStyle || "#191D4C";
       this.mHeight = options.mHeight || height;
-      this.displacement = options.displacement || 140; // Added as property
+      this.displacement = options.displacement || 140;
 
-      // generate terrain points
       this.points = [];
       const power = Math.pow(2, Math.ceil(Math.log(width) / Math.log(2)));
 
       this.points[0] = this.mHeight;
       this.points[power] = this.points[0];
 
-      // create terrain points using midpoint displacement
-      let currentDisplacement = this.displacement; // Use let instead of const
+      let currentDisplacement = this.displacement;
       for (let i = 1; i < power; i *= 2) {
         for (let j = (power / i) / 2; j < power; j += power / i) {
           this.points[j] = ((this.points[j - (power / i) / 2] + 
@@ -66,7 +64,7 @@ const TerrainBackground = () => {
     }
   }
 
-  // Star class
+  // Star class (unchanged)
   class Star {
     constructor(options, width, height) {
       this.width = width;
@@ -94,7 +92,7 @@ const TerrainBackground = () => {
     }
   }
 
-  // ShootingStar class
+  // ShootingStar class (unchanged)
   class ShootingStar {
     constructor(width, height) {
       this.width = width;
@@ -133,14 +131,22 @@ const TerrainBackground = () => {
     }
   }
 
+  const updateCanvasDimensions = (canvas) => {
+    if (!canvas) return { width: 0, height: 0 };
+    const width = window.innerWidth;
+    // Use the maximum of viewport height and full document height
+    const height = Math.max(window.innerHeight, document.documentElement.scrollHeight);
+    canvas.width = width;
+    canvas.height = height;
+    return { width, height };
+  };
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const width = window.innerWidth;
-    const height = Math.max(document.body.offsetHeight, 400);
-    canvas.width = width;
-    canvas.height = height;
+    // Set initial dimensions
+    const { width, height } = updateCanvasDimensions(canvas);
     const ctx = canvas.getContext('2d');
 
     // Initialize entities
@@ -197,31 +203,25 @@ const TerrainBackground = () => {
 
     // Handle resize
     const handleResize = () => {
-      const newWidth = window.innerWidth;
-      const newHeight = Math.max(document.body.offsetHeight, 400);
+      const { width, height } = updateCanvasDimensions(canvas);
       
-      if (canvas) {
-        canvas.width = newWidth;
-        canvas.height = newHeight;
+      // Update dimensions for all entities
+      entitiesRef.current.forEach(entity => {
+        if (entity.width !== undefined) entity.width = width;
+        if (entity.height !== undefined) entity.height = height;
         
-        // Update dimensions for all entities
-        entitiesRef.current.forEach(entity => {
-          if (entity.width !== undefined) entity.width = newWidth;
-          if (entity.height !== undefined) entity.height = newHeight;
-          
-          // Reset terrains
-          if (entity instanceof Terrain) {
-            const options = {
-              displacement: entity.displacement,
-              scrollDelay: entity.scrollDelay,
-              fillStyle: entity.fillStyle,
-              mHeight: entity.mHeight
-            };
-            const newTerrain = new Terrain(options, newWidth, newHeight);
-            Object.assign(entity, newTerrain);
-          }
-        });
-      }
+        // Reset terrains
+        if (entity instanceof Terrain) {
+          const options = {
+            displacement: entity.displacement,
+            scrollDelay: entity.scrollDelay,
+            fillStyle: entity.fillStyle,
+            mHeight: entity.mHeight
+          };
+          const newTerrain = new Terrain(options, width, height);
+          Object.assign(entity, newTerrain);
+        }
+      });
     };
 
     window.addEventListener('resize', handleResize);

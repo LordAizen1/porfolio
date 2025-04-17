@@ -1,64 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import ParticlesComponent from '../components/Particles';
 
-// Decryption effect component
-const DecryptText = ({ text, delay = 0 }) => {
-  const characters = "01!@#$%^&*()_+-=[]{}|?/\\";
-  const [displayText, setDisplayText] = useState("");
-  const [isDecrypted, setIsDecrypted] = useState(false);
-
-  useEffect(() => {
-    let iterations = 0;
-    const interval = setInterval(() => {
-      const randomText = text
-        .split("")
-        .map((_, index) => {
-          if (index < iterations) return text[index];
-          return characters[Math.floor(Math.random() * characters.length)];
-        })
-        .join("");
-
-      setDisplayText(randomText);
-
-      if (iterations >= text.length) {
-        clearInterval(interval);
-        setIsDecrypted(true);
-      }
-      iterations += 1; // Speed adjustment (lower = slower)
-    }, 20); // Interval timing
-
-    return () => clearInterval(interval);
-  }, [text]);
-
-  return (
-    <motion.span
-      initial={{ opacity: 0 }}
-      animate={{ 
-        opacity: 1,
-        color: isDecrypted ? "#E0E0E0" : "#58A4B0"
-      }}
-      transition={{ 
-        delay,
-        color: { duration: 0.3, delay: text.length * 0.03 }
-      }}
-    >
-      {displayText}
-      {isDecrypted && (
-        <motion.span
-          animate={{ opacity: [0, 1, 0] }}
-          transition={{ repeat: Infinity, duration: 0.8 }}
-          style={{ marginLeft: 2 }}
-        >
-          █
-        </motion.span>
-      )}
-    </motion.span>
-  );
-};
-
 const KnowMore = () => {
-  const aboutMeText = "I am an undergraduate student at the prestigious Indraprastha Institute of Information and Technology, Delhi, majoring in Computer Science and Engineering. I am passionate about software development and engineering, with some interest in web development as well. I enjoy building dynamic, user-friendly websites and applications, and I am currently honing my skills in relevant fields such as HTML, CSS, JavaScript, React, Node.js, etc. Alongside web development, I am also exploring other areas of software engineering to broaden my expertise.";
+  const aboutMeText = "I am an undergraduate Computer Science and Engineering student at IIIT Delhi, passionately pursuing software development with a strong focus on both web technologies and cutting-edge Machine Learning. While I enjoy building dynamic, user-friendly applications using modern stacks like React and Node.js, I'm equally committed to mastering ML fundamentals - from tensor operations to neural architectures - to stay aligned with industry demands. My academic projects and self-learning initiatives strategically balance these interests, allowing me to develop full-stack solutions while also exploring AI/ML applications, ensuring I remain adaptable to evolving technological landscapes.";
 
   return (
     <motion.div
@@ -76,7 +21,7 @@ const KnowMore = () => {
         About Me
       </motion.h1>
 
-      {/* About Me Section with Decryption Effect */}
+      {/* About Me Section - Simplified */}
       <motion.article
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -85,15 +30,7 @@ const KnowMore = () => {
       >
         <strong className="imp">Who Am I?</strong>
         <p id="me">
-          {aboutMeText.split(". ").map((sentence, i) => (
-            <React.Fragment key={i}>
-              <DecryptText 
-                text={i === 0 ? sentence : ". " + sentence} 
-                delay={0.5 + i * 0.3} 
-              />
-              <br /><br />
-            </React.Fragment>
-          ))}
+          {aboutMeText}
         </p>
       </motion.article>
 
@@ -113,7 +50,7 @@ const KnowMore = () => {
             { name: 'C', icon: '/porfolio/images/c.png' },
             { name: 'HTML', icon: '/porfolio/images/html.png' },
             { name: 'CSS', icon: '/porfolio/images/css.png' },
-            { name: 'JS', icon: '/porfolio/images/js.png'}
+            { name: 'JS', icon: '/porfolio/images/js.png'},
           ].map((language, index) => (
             <motion.div
               key={language.name}
@@ -137,17 +74,18 @@ const KnowMore = () => {
         transition={{ duration: 0.5, delay: 1.0 }}
         className="technologies"
       >
-        <h2>Technologies I Use</h2>
+        <h2>Tools & Technologies I Use</h2>
         <div className="technologies-list">
           {[
             { name: 'Intellij', icon: '/porfolio/images/intellij.png' },
-            { name: 'ChatGPT', icon: '/porfolio/images/chatgpt.png' },
             { name: 'VS Code', icon: '/porfolio/images/vscode.png' },
             { name: 'Ubuntu', icon: '/porfolio/images/ubuntu.png' },
             { name: 'GitHub', icon: '/porfolio/images/github.png' },
+            { name: 'Colab', icon: '/porfolio/images/colab.png' },
+            { name: 'Grok', icon: '/porfolio/images/grok.png' },
             { name: 'ReactJS', icon: '/porfolio/images/reacjs.png' },
             { name: 'Firebase', icon: '/porfolio/images/firebase.png' },
-            { name: 'NodeJS', icon: '/porfolio/images/nodejs.png' }
+            { name: 'NodeJS', icon: '/porfolio/images/nodejs.png' },
           ].map((technology, index) => (
             <motion.div
               key={technology.name}

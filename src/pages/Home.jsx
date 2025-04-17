@@ -31,8 +31,10 @@ const Home = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="intro-text"
         >
-          Hi, I'm <strong>Mohammad Kaif</strong>, a passionate developer and tech enthusiast. 
+          Hi👋🏼, I'm <strong>Mohammad Kaif</strong>, a passionate developer and tech enthusiast. 
           This is my space to showcase my projects, skills, and journey in the world of software development.
+          <br />
+          <span className="faint-text">(And I love cats 🐈)</span>
         </motion.p>
 
         {/* Highlights Section */}
