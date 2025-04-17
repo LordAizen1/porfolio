@@ -7,14 +7,14 @@ import Home from './pages/Home';
 import KnowMore from './pages/KnowMore';
 import ProjectsPage from './pages/ProjectsPage';
 import ScrollToTopButton from './components/ScrollToTopButton';
-import TerrainBackground from './components/Particles'; // Renamed import
 import './style.css';
+import AmongUsBackground from './components/Particles';
 
 function App() {
   return (
     <Router basename="/porfolio">
       {/* Persistent Background - Rendered once */}
-      <TerrainBackground />
+      <AmongUsBackground />
       
       {/* Content Wrapper (z-index: 1) */}
       <div className="content-wrapper">

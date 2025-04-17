@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ParticlesComponent from '../components/Particles';
+import AmongUsBackground from '../components/Particles';
 
 const KnowMore = () => {
   const aboutMeText = "I am an undergraduate Computer Science and Engineering student at IIIT Delhi, passionately pursuing software development with a strong focus on both web technologies and cutting-edge Machine Learning. While I enjoy building dynamic, user-friendly applications using modern stacks like React and Node.js, I'm equally committed to mastering ML fundamentals - from tensor operations to neural architectures - to stay aligned with industry demands. My academic projects and self-learning initiatives strategically balance these interests, allowing me to develop full-stack solutions while also exploring AI/ML applications, ensuring I remain adaptable to evolving technological landscapes.";
@@ -12,7 +13,7 @@ const KnowMore = () => {
       transition={{ duration: 0.5 }}
       className="know-more"
     >
-      <ParticlesComponent />
+      <AmongUsBackground />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

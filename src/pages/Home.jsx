@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import ParticlesComponent from '../components/Particles';
+// import ParticlesComponent from '../components/Particles';
+import AmongUsBackground from '../components/Particles';
 import Modal from '../components/Modal'; // Import the Modal component
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
       transition={{ duration: 0.5 }}
       className="home"
     >
-      <ParticlesComponent />
+      <AmongUsBackground />
       <div className="home-content">
         {/* Title */}
         <motion.h1
