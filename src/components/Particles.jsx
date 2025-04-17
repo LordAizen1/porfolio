@@ -32,7 +32,7 @@ const AmongUsBackground = () => {
             default: "destroy",
             right: "destroy"
           },
-          straight: false // More natural movement
+          straight: true // More natural movement
         }
       }
     },
