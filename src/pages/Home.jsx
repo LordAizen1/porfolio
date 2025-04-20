@@ -51,7 +51,7 @@ const Home = () => {
               {
                 title: 'Web Development',
                 description:
-                  'I build responsive, user-friendly websites and web applications using modern technologies like React, Node.js, and Tailwind CSS.',
+                  'I craft dynamic web experiences using React and Node.js, while also exploring machine learning applications. My development approach combines responsive design with data-driven insights, bridging frontend interfaces with intelligent backend systems.',
               },
               {
                 title: 'Problem Solving',
