@@ -245,6 +245,7 @@ nav {
 }
 
 .nav-btn {
+  font-weight: 600;
   padding: 10px 20px;
   margin: 5%;
   padding-top: 0.5%;
