@@ -49,9 +49,9 @@ const Home = () => {
           <div className="highlight-cards">
             {[
               {
-                title: 'Web Development',
+                title: 'Development',
                 description:
-                  'I craft dynamic web experiences using React and Node.js, while also exploring machine learning applications. My development approach combines responsive design with data-driven insights, bridging frontend interfaces with intelligent backend systems.',
+                  'Half data scientist, half developer – I build machine learning models with Python and deploy them through full-stack applications, bridging the gap between algorithms and end-users.',
               },
               {
                 title: 'Problem Solving',
