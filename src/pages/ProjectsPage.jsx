@@ -12,6 +12,12 @@ const ProjectsPage = () => {
       link: 'https://cryptolab.iiitd.edu.in/'
     },
     {
+      title: 'Multi-Scan App',
+      image: '/porfolio/images/multi-scan.png',
+      description:
+        'Developed an Android app integrating document scanning and landmark recognition, built with Jetpack Compose. Features a user-friendly interface, TensorFlow Lite for real-time landmark recognition, PDF generation for scans, and seamless navigation via a main menu. Technologies: Kotlin, Jetpack Compose, TensorFlow Lite, CameraX.',
+    },
+    {
       title: 'Dr-WebDev',
       image: '/porfolio/images/dr-webdev-high-resolution-logo 1.png',
       description:
