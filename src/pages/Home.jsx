@@ -51,7 +51,7 @@ const Home = () => {
               {
                 title: 'Development',
                 description:
-                  'Half data scientist, half developer – I build machine learning models with Python and deploy them through full-stack applications, bridging the gap between algorithms and end-users.',
+                  'From Machine Learning to developer – I try to build build machine learning models with Python and deploy them through full-stack applications, bridging the gap between algorithms and end-users.',
               },
               {
                 title: 'Problem Solving',
