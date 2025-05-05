@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import KnowMore from './pages/KnowMore';
 import ProjectsPage from './pages/ProjectsPage';
+import ExperiencesPage from './pages/ExperiencesPage';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import './style.css';
 import AmongUsBackground from './components/Particles';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/know-more" element={<KnowMore />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experiences" element={<ExperiencesPage />} />
         </Routes>
         <Footer />
         <ScrollToTopButton />

@@ -666,3 +666,104 @@ footer {
 .projects-page .project a:hover {
   background-color: #4093A6;
 }
+
+/* Experiences Page Styles */
+.experiences-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.experiences-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #58A4B0;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience {
+  background-color: rgba(43, 43, 43, 0.8);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.experience:hover {
+  transform: translateY(-5px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.experience-header h2 {
+  font-size: 1.8rem;
+  color: #58A4B0;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.experience-period {
+  font-size: 1.2rem;
+  color: #A9A9A9;
+  font-style: italic;
+}
+
+.experience-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #E0E0E0;
+}
+
+.experience-description ul {
+  padding-left: 20px;
+}
+
+.experience-description li {
+  margin-bottom: 10px;
+}
+
+.experience-description code {
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.experience-link {
+  color: #58A4B0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.experience-link:hover {
+  color: #4093A6;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+  }
+  
+  .experience-header h2 {
+    margin-right: 0;
+  }
+  
+  .experience-period {
+    margin-bottom: 15px;
+  }
+}

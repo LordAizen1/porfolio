@@ -10,6 +10,7 @@ const Navbar = () => {
         <RouterLink to="/" className="nav-btn">Home</RouterLink>
         <RouterLink to="/know-more" className="nav-btn">Know More</RouterLink>
         <RouterLink to="/projects" className="nav-btn">Projects</RouterLink>
+        <RouterLink to="/experiences" className="nav-btn">Experiences</RouterLink>
         <ScrollLink
           to="last-footer"
           smooth={true}
