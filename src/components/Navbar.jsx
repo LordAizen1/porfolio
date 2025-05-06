@@ -8,7 +8,7 @@ const Navbar = () => {
     <div id="nav-header">
       <nav>
         <RouterLink to="/" className="nav-btn">Home</RouterLink>
-        <RouterLink to="/know-more" className="nav-btn">Know More</RouterLink>
+        <RouterLink to="/know-more" className="nav-btn">Know Me</RouterLink>
         <RouterLink to="/projects" className="nav-btn">Projects</RouterLink>
         <RouterLink to="/experiences" className="nav-btn">Experiences</RouterLink>
         <ScrollLink
@@ -17,7 +17,7 @@ const Navbar = () => {
           duration={1000}
           className="nav-btn get-in-touch"
         >
-          Get In Touch
+          Contact
         </ScrollLink>
       </nav>
     </div>
