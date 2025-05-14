@@ -51,7 +51,7 @@ const KnowMore = () => {
             { name: 'C', icon: '/porfolio/images/c.png' },
             { name: 'HTML', icon: '/porfolio/images/html.png' },
             { name: 'CSS', icon: '/porfolio/images/css.png' },
-            { name: 'JS', icon: '/porfolio/images/js.png'},
+            { name: 'JS', icon: '/porfolio/images/JS.png'},
           ].map((language, index) => (
             <motion.div
               key={language.name}
