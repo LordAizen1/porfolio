@@ -1,4 +1,3 @@
-
 import React, { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
@@ -15,7 +14,7 @@ const AmongUsBackground = () => {
     background: {
       ...particlesConfig.background,
       color: {
-        value: "#110E19" // Your preferred dark blue background
+        value: "#110E19" // Changed from dark blue to a darker shade of cyan
       }
     },
     emitters: {
