@@ -95,7 +95,7 @@ body {
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #58A4B0;
+  color: #0033ff;
 }
 
 .card p {
@@ -119,7 +119,7 @@ body {
 }
 
 .cta-button {
-  background-color: #58A4B0;
+  background-color: #0033ff;
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
@@ -129,14 +129,14 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #4093A6;
+  background-color: #0026cc;
 }
 
 .resume-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #58A4B0; 
+  background-color: #0033ff; 
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -146,7 +146,7 @@ body {
 }
 
 .resume-button:hover {
-  background-color: #A9BCD0; /* Darker blue on hover */
+  background-color: #3355ff; 
 }
 
 /* Modal Overlay */
@@ -180,7 +180,7 @@ body {
 }
 
 .resume-image {
-  border: 2px solid #58A4B0; /* Add a border */
+  border: 2px solid #0033ff; /* Add a border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
 
@@ -190,7 +190,7 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #58A4B0;
+  background-color: #0033ff;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -200,14 +200,14 @@ body {
 }
 
 .close-button:hover {
-  background-color: #A9BCD0;
+  background-color: #3355ff;
 }
 
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #58A4B0;
+  background-color: #0033ff;
   color: white;
   border: none;
   border-radius: 50%;
@@ -228,12 +228,12 @@ body {
 }
 
 .scroll-to-top:hover {
-  background-color: #4093A6;
+  background-color: #0026cc;
 }
 
 /* Navigation */
 nav {
-  border: 1px solid #58A4B0;
+  border: 1px solid #0033ff;
   border-left: none;
   border-right: none;
   height: 27px;
@@ -256,12 +256,12 @@ nav {
 
 .nav-btn:hover {
   transform: scale(1.05);
-  color: #4093A6;
+  color: #0026cc;
 }
 
 /* Centered content */
 .centered {
-  color: #A9BCD0;
+  color: #3355ff;
   font-size: 25px;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -280,15 +280,23 @@ nav {
 /* Header */
 header {
   font-size: larger;
-  color: #A9BCD0;
+  color: #3355ff;
   text-align: center;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  color: #0033ff;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
 }
 
 /* Sections and articles */
 section,
 article {
   margin-bottom: 20px;
-  color: #A9BCD0;
+  color: #3355ff;
   text-align: center;
   transition: transform 0.3s ease;
   /* background-color: #000000; */
@@ -300,7 +308,7 @@ article {
 /* Links */
 a {
   text-decoration: none;
-  color: #58A4B0;
+  color: #0033ff;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -340,7 +348,7 @@ main {
   display: inline-block;
   margin: 10px;
   padding: 10px;
-  color: #58A4B0;
+  color: #0033ff;
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
   text-align: center;
@@ -353,7 +361,7 @@ main {
 
 .contact:hover {
   transform: scale(1.05);
-  color: #2093A6;
+  color: #0026cc;
 }
 
 
@@ -364,7 +372,7 @@ footer {
 }
 
 #last-footer {
-  color: #A9BCD0;
+  color: #3355ff;
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
@@ -491,7 +499,7 @@ footer {
 .know-more h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #58A4B0;
+  color: #0033ff;
 }
 
 .know-more article.centered {
@@ -502,7 +510,7 @@ footer {
 
 .know-more article.centered strong.imp {
   font-size: 1.8rem;
-  color: #58A4B0;
+  color: #0033ff;
   display: block;
   margin-bottom: 10px;
 }
@@ -525,7 +533,7 @@ footer {
 .know-more section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #58A4B0;
+  color: #0033ff;
 }
 
 .know-more .languages-list,
@@ -591,7 +599,7 @@ footer {
 }
 
 .know-more .achievement strong {
-  color: #58A4B0;
+  color: #0033ff;
   display: block;
   margin-bottom: 5px;
 }
@@ -607,7 +615,7 @@ footer {
 .projects-page h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #58A4B0;
+  color: #0033ff;
 }
 
 .projects-page .project-section {
@@ -634,7 +642,7 @@ footer {
 .projects-page .project h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #58A4B0;
+  color: #0033ff;
 }
 
 .projects-page .project img {
@@ -654,7 +662,7 @@ footer {
 
 .projects-page .project a {
   display: inline-block;
-  background-color: #58A4B0;
+  background-color: #0033ff;
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
@@ -664,7 +672,7 @@ footer {
 }
 
 .projects-page .project a:hover {
-  background-color: #4093A6;
+  background-color: #0026cc;
 }
 
 /* Experiences Page Styles */
@@ -678,7 +686,7 @@ footer {
 .experiences-page h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #58A4B0;
+  color: #0033ff;
 }
 
 .experience-section {
@@ -710,7 +718,7 @@ footer {
 
 .experience-header h2 {
   font-size: 1.8rem;
-  color: #58A4B0;
+  color: #0033ff;
   margin-right: 20px;
   margin-bottom: 10px;
 }
@@ -744,13 +752,13 @@ footer {
 }
 
 .experience-link {
-  color: #58A4B0;
+  color: #0033ff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .experience-link:hover {
-  color: #4093A6;
+  color: #0026cc;
   text-decoration: underline;
 }
 
@@ -766,4 +774,30 @@ footer {
   .experience-period {
     margin-bottom: 15px;
   }
+}
+
+.about-me-text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.about-me-text p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about-me-text .intro {
+  font-size: 1.1em;
+  color: #e0e0e0;
+}
+
+.about-me-text .web-dev {
+  color: #d0d0d0;
+}
+
+.about-me-text .conclusion {
+  color: #c0c0c0;
+  font-style: italic;
 }

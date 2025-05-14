@@ -4,12 +4,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <img
-        className="logo"
-        src="/porfolio/images/dr-webdev-high-resolution-logo-transparent.png" // Use absolute path
-        alt="Dr-WebDev Logo"
-        width="300"
-      />
+      <h1 className="logo-text">ポートフォリオ</h1>
       {/* <Navbar /> */}
     </header>
   );
