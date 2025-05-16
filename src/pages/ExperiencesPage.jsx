@@ -5,6 +5,20 @@ import ParticlesComponent from '../components/Particles';
 const ExperiencesPage = () => {
   const experiences = [
     {
+      title: 'Open Source Contributor — IIITD-PYQs',
+      period: 'May 2025',
+      description: `
+        <ul>
+          <li>Contributed past year course materials for a new course (Design Research) to a widely-used IIITD repository, enhancing resources for thousands of students</li>
+          <li>Ensured proper formatting and categorization of materials to improve accessibility and usability for exam preparation</li>
+          <li>Submitted and successfully merged a pull request (PR #44), marking my first contribution that got merged in main</li>
+          <li>Collaborated via GitHub, adhering to the project’s contribution guidelines and standards</li>
+          <li>GitHub PR: <a href="https://github.com/NalishJain/IIITD-PYQs/pull/44" target="_blank" rel="noopener noreferrer">#44</a></li>
+        </ul>
+      `,
+      link: 'https://github.com/NalishJain/IIITD-PYQs/pull/44'
+    },
+    {
       title: 'Open Source Contributor — Gatsby.js',
       period: 'May 2025',
       description: `
@@ -17,20 +31,21 @@ const ExperiencesPage = () => {
       `,
       link: 'https://github.com/gatsbyjs/gatsby/issues/39296'
     },
-    {
-      title: 'Open Source Contributor — Tekdi Technologies (Teachers App on GitHub)',
-      period: 'May 2025',
-      description: `
-        <ul>
-          <li>Enhanced <code>README.md</code> with an expanded project overview, tech stack breakdown, setup instructions, and improved usage/testing workflows</li>
-          <li>Authored <code>CONTRIBUTING.md</code> detailing contribution workflow, branching strategy, commit standards, code style, and areas for community involvement</li>
-          <li>Added <code>ARCHITECTURE.md</code> covering high-level system design, UI/data flow diagrams, component breakdown, and extensibility roadmap</li>
-          <li>Structured documentation for clarity, developer onboarding, and long-term maintainability</li>
-          <li>Collaborated via GitHub and followed project documentation and contribution standards</li>
-        </ul>
-      `,
-      link: 'https://github.com/tekdi/teachers-app/pull/740'
-    },
+    
+    // {
+    //   title: 'Open Source Contributor — Tekdi Technologies (Teachers App on GitHub)',
+    //   period: 'May 2025',
+    //   description: `
+    //     <ul>
+    //       <li>Enhanced <code>README.md</code> with an expanded project overview, tech stack breakdown, setup instructions, and improved usage/testing workflows</li>
+    //       <li>Authored <code>CONTRIBUTING.md</code> detailing contribution workflow, branching strategy, commit standards, code style, and areas for community involvement</li>
+    //       <li>Added <code>ARCHITECTURE.md</code> covering high-level system design, UI/data flow diagrams, component breakdown, and extensibility roadmap</li>
+    //       <li>Structured documentation for clarity, developer onboarding, and long-term maintainability</li>
+    //       <li>Collaborated via GitHub and followed project documentation and contribution standards</li>
+    //     </ul>
+    //   `,
+    //   link: 'https://github.com/tekdi/teachers-app/pull/740'
+    // },
     // You can add additional experience entries here following the same structure
   ];
 

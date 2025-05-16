@@ -80,6 +80,7 @@ const KnowMore = () => {
           {[
             { name: 'Intellij', icon: '/porfolio/images/intellij.png' },
             { name: 'VS Code', icon: '/porfolio/images/vscode.png' },
+            { name: 'Git', icon: '/porfolio/images/git.png' },
             { name: 'Ubuntu', icon: '/porfolio/images/ubuntu.png' },
             { name: 'GitHub', icon: '/porfolio/images/github.png' },
             { name: 'Colab', icon: '/porfolio/images/colab.png' },
