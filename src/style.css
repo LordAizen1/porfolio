@@ -184,6 +184,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
 
+.resume-pdf {
+  border: 2px solid #00FFFF; /* Add a border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  background-color: white; /* Add white background for PDF readability */
+}
 
 /* Close Button */
 .close-button {
