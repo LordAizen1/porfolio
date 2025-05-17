@@ -111,7 +111,7 @@ const Home = () => {
           className='resume-pdf'
           src="/porfolio/images/Md_Kaif_Resume.pdf"
           title="Mohammad Kaif's Resume"
-          style={{ width: '100%', height: '90vh', border: '2px solid #00FFFF', borderRadius: '5px' }}
+          style={{ width: '100%', height: '80vh', border: '2px solid #00FFFF', borderRadius: '5px' }}
         />
       </Modal>
     </motion.div>
