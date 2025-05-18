@@ -5,6 +5,20 @@ import ParticlesComponent from '../components/Particles';
 const ExperiencesPage = () => {
   const experiences = [
     {
+      title: 'Research Assistant - VeilCode Labs',
+      period: 'Jan 2025-Mar2025',
+      description: `
+        <ul>
+          <li>Developed an educational cryptography platform built with React.js and Firebase under Dr. Ravi Anand at IIIT Delhi.</li>
+          <li>Implemented comprehensive course materials, interactive labs, and research resources to enhance cryptography education.</li>
+          <li>Created an admin panel with CRUD functionality for managing educational content.</li>
+          <li>Designed and built a structured and accessible digital learning environment focused on cryptography concepts.</li>
+          <li>Technologies used: React.js, Firebase, HTML/CSS, JavaScript</li>
+        </ul>
+      `,
+      link: 'https://cryptolab.iiitd.edu.in/'
+    },
+    {
       title: 'Open Source Contributor — IIITD-PYQs',
       period: 'May 2025',
       description: `
@@ -12,7 +26,7 @@ const ExperiencesPage = () => {
           <li>Contributed past year course materials for a new course (Design Research) to a widely-used IIITD repository, enhancing resources for thousands of students</li>
           <li>Ensured proper formatting and categorization of materials to improve accessibility and usability for exam preparation</li>
           <li>Submitted and successfully merged a pull request (PR #44), marking my first contribution that got merged in main</li>
-          <li>Collaborated via GitHub, adhering to the project’s contribution guidelines and standards</li>
+          <li>Collaborated via GitHub, adhering to the project's contribution guidelines and standards</li>
           <li>GitHub PR: <a href="https://github.com/NalishJain/IIITD-PYQs/pull/44" target="_blank" rel="noopener noreferrer">#44</a></li>
         </ul>
       `,
