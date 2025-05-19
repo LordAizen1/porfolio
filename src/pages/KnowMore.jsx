@@ -130,6 +130,23 @@ const KnowMore = () => {
               Selected amongst thousands of participants to be a part of the Summer School.
             </p>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, delay: 0.2 }}
+            whileHover={{ scale: 1.05 }}
+            className="achievement"
+          >
+            <img
+              src="/porfolio/images/artificial-intelligence-fundamentals.png"
+              alt="IBM AI Fundamentals Badge"
+              className="achievement-icon"
+            />
+            <p>
+              <strong>IBM Artificial Intelligence Fundamentals</strong>
+              Successfully completed the IBM Artificial Intelligence Fundamentals course, demonstrating proficiency in core AI concepts and applications.
+            </p>
+          </motion.div>
         </div>
       </motion.section>
     </motion.div>
