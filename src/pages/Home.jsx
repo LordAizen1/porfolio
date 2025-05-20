@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 // import ParticlesComponent from '../components/Particles';
 import AmongUsBackground from '../components/Particles';
-import Modal from '../components/Modal'; // Import the Modal component
 
 const Home = () => {
-  const [isResumeOpen, setIsResumeOpen] = useState(false); // State to control modal visibility
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -91,29 +88,21 @@ const Home = () => {
             Whether you're looking to collaborate on a project, hire a developer, or just want to chat about tech, 
             I'd love to hear from you!
           </p>
-          {/* Add the View Resume Button */}
-          <motion.button
+          {/* Resume Link */}
+          <motion.a
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             whileHover={{ scale: 1.05 }}
             className="resume-button"
-            onClick={() => setIsResumeOpen(true)} // Open the modal
+            href="/porfolio/images/Md_Kaif_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             View Resume
-          </motion.button>
+          </motion.a>
         </motion.section>
       </div>
-
-      {/* Resume Modal */}
-      <Modal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)}>
-        <iframe
-          className='resume-pdf'
-          src="/porfolio/images/Md_Kaif_Resume.pdf"
-          title="Mohammad Kaif's Resume"
-          style={{ width: '100%', height: '80vh', border: '2px solid #00FFFF', borderRadius: '5px' }}
-        />
-      </Modal>
     </motion.div>
   );
 };
