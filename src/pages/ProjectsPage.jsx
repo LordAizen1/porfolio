@@ -29,10 +29,11 @@ const ProjectsPage = () => {
         'A simple shell program called "Dungeon" written in C. SIGINT signal handling <br /> with lots of supported shell commands, pipeline handling, and maintaining <br /> a record of process\'s PID, start time, and end time, which gets shown at exit.',
     },
     {
-      title: 'Employee Management System',
-      image: '/porfolio/images/ems.png',
+      title: 'Task-Board-App',
+      image: '/porfolio/images/task-board.png',
       description: 
-      'A simple employee management system featuring an admin login as well as an employee, both having their own dashboard, admin can create tasks, see status of tasks, employee can see their active, completed etc. tasks.'
+      '(A small fun side project)A modern task management application with drag-and-drop functionality, featuring a congratulatory animation when tasks are completed. Includes task management features (add, edit, delete), and supports both Light and Dark mode themes.',
+      link: 'https://lordaizen1.github.io/task-board-app/'
     },
   ];
 
@@ -68,20 +69,22 @@ const ProjectsPage = () => {
             whileHover={{ scale: 1.03 }}
             className="project"
           >
-            <h2>
-              {project.link ? (
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                  {project.title}
-                </a>
-              ) : (
-                project.title
-              )}
-            </h2>
+            <div className="project-content">
+              <h2>
+                {project.link ? (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                    {project.title}
+                  </a>
+                ) : (
+                  project.title
+                )}
+              </h2>
+              <div className="project-description">
+                <p dangerouslySetInnerHTML={{ __html: project.description }} />
+              </div>
+            </div>
             <div className="project-image-container">
               <img src={project.image} alt={project.title} className="project-image" />
-            </div>
-            <div className="project-description">
-              <p dangerouslySetInnerHTML={{ __html: project.description }} />
             </div>
           </motion.article>
         ))}

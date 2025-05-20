@@ -95,7 +95,7 @@ body {
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 .card p {
@@ -119,7 +119,7 @@ body {
 }
 
 .cta-button {
-  background-color: #00FFFF;
+  background-color: #4A90E2;
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
@@ -129,14 +129,14 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #00FFFF;
+  background-color: #357ABD;
 }
 
 .resume-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #00FFFF; 
+  background-color: #4A90E2; 
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -146,7 +146,7 @@ body {
 }
 
 .resume-button:hover {
-  background-color: #00FFFF; 
+  background-color: #357ABD; 
 }
 
 /* Modal Overlay */
@@ -180,14 +180,14 @@ body {
 }
 
 .resume-image {
-  border: 2px solid #00FFFF; /* Add a border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  border: 2px solid #4A90E2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .resume-pdf {
-  border: 2px solid #00FFFF; /* Add a border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
-  background-color: white; /* Add white background for PDF readability */
+  border: 2px solid #4A90E2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 /* Close Button */
@@ -195,7 +195,7 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #00FFFF;
+  background-color: #4A90E2;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -205,14 +205,14 @@ body {
 }
 
 .close-button:hover {
-  background-color: #00FFFF;
+  background-color: #357ABD;
 }
 
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #00FFFF;
+  background-color: #4A90E2;
   color: white;
   border: none;
   border-radius: 50%;
@@ -225,7 +225,7 @@ body {
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, opacity 0.3s ease;
-  opacity: 0; /* Hidden by default */
+  opacity: 0;
 }
 
 .scroll-to-top.visible {
@@ -233,12 +233,12 @@ body {
 }
 
 .scroll-to-top:hover {
-  background-color: #00FFFF;
+  background-color: #357ABD;
 }
 
 /* Navigation */
 nav {
-  border: 1px solid #00FFFF;
+  border: 1px solid #4A90E2;
   border-left: none;
   border-right: none;
   height: 27px;
@@ -261,12 +261,12 @@ nav {
 
 .nav-btn:hover {
   transform: scale(1.05);
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 /* Centered content */
 .centered {
-  color: #00FFFF;
+  color: #4A90E2;
   font-size: 25px;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -285,13 +285,13 @@ nav {
 /* Header */
 header {
   font-size: larger;
-  color: #00FFFF;
+  color: #4A90E2;
   text-align: center;
 }
 
 .logo-text {
   font-size: 2.5rem;
-  color: #00FFFF;
+  color: #4A90E2;
   font-weight: bold;
   margin: 20px 0;
   letter-spacing: 2px;
@@ -301,7 +301,7 @@ header {
 section,
 article {
   margin-bottom: 20px;
-  color: #00FFFF;
+  color: #4A90E2;
   text-align: center;
   transition: transform 0.3s ease;
   /* background-color: #000000; */
@@ -313,7 +313,7 @@ article {
 /* Links */
 a {
   text-decoration: none;
-  color: #00FFFF;
+  color: #4A90E2;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -353,7 +353,7 @@ main {
   display: inline-block;
   margin: 10px;
   padding: 10px;
-  color: #00FFFF;
+  color: #4A90E2;
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
   text-align: center;
@@ -366,7 +366,7 @@ main {
 
 .contact:hover {
   transform: scale(1.05);
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 
@@ -377,7 +377,7 @@ footer {
 }
 
 #last-footer {
-  color: #00FFFF;
+  color: #4A90E2;
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
@@ -504,7 +504,7 @@ footer {
 .know-more h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 .know-more article.centered {
@@ -515,7 +515,7 @@ footer {
 
 .know-more article.centered strong.imp {
   font-size: 1.8rem;
-  color: #00FFFF;
+  color: #4A90E2;
   display: block;
   margin-bottom: 10px;
 }
@@ -524,6 +524,10 @@ footer {
   font-size: 1.2rem;
   line-height: 1.8;
   color: #E0E0E0;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .know-more section {
@@ -538,7 +542,7 @@ footer {
 .know-more section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 .know-more .languages-list,
@@ -601,10 +605,12 @@ footer {
 .know-more .achievement p {
   font-size: 1.2rem;
   line-height: 1.6;
+  text-align: left;
+  margin: 0;
 }
 
 .know-more .achievement strong {
-  color: #00FFFF;
+  color: #4A90E2;
   display: block;
   margin-bottom: 5px;
 }
@@ -620,54 +626,78 @@ footer {
 .projects-page h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 .projects-page .project-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .projects-page .project {
   background-color: rgba(43, 43, 43, 0.8);
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
   transition: transform 0.3s ease;
 }
 
+.projects-page .project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .projects-page .project:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+}
+
+.projects-page .project-content {
+  flex: 1;
+  text-align: left;
 }
 
 .projects-page .project h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 .projects-page .project img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 400px;
+  height: 250px;
+  object-fit: contain;
+  background-color: rgba(26, 26, 26, 0.8);
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 10px;
+}
+
+.projects-page .project-image-container {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(26, 26, 26, 0.8);
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .projects-page .project p {
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #E0E0E0;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .projects-page .project a {
   display: inline-block;
-  background-color: #00FFFF;
+  background-color: #4A90E2;
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
@@ -677,7 +707,28 @@ footer {
 }
 
 .projects-page .project a:hover {
-  background-color: #00FFFF;
+  background-color: #357ABD;
+}
+
+@media (max-width: 768px) {
+  .projects-page .project {
+    flex-direction: column !important;
+    padding: 20px;
+  }
+
+  .projects-page .project img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+
+  .projects-page .project-image-container {
+    width: 100%;
+  }
+
+  .projects-page .project p {
+    text-align: justify;
+  }
 }
 
 /* Experiences Page Styles */
@@ -691,7 +742,7 @@ footer {
 .experiences-page h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #00FFFF;
+  color: #4A90E2;
 }
 
 .experience-section {
@@ -723,7 +774,7 @@ footer {
 
 .experience-header h2 {
   font-size: 1.8rem;
-  color: #00FFFF;
+  color: #4A90E2;
   margin-right: 20px;
   margin-bottom: 10px;
 }
@@ -736,16 +787,20 @@ footer {
 
 .experience-description {
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #E0E0E0;
+  text-align: justify;
+  padding: 0 10px;
 }
 
 .experience-description ul {
   padding-left: 20px;
+  text-align: left;
 }
 
 .experience-description li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 .experience-description code {
@@ -757,13 +812,13 @@ footer {
 }
 
 .experience-link {
-  color: #00FFFF;
+  color: #4A90E2;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .experience-link:hover {
-  color: #00FFFF;
+  color: #4A90E2;
   text-decoration: underline;
 }
 
@@ -791,18 +846,23 @@ footer {
 .about-me-text p {
   margin-bottom: 1.5rem;
   text-align: justify;
+  line-height: 1.8;
+  padding: 0 10px;
 }
 
 .about-me-text .intro {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #e0e0e0;
+  margin-bottom: 2rem;
 }
 
 .about-me-text .web-dev {
   color: #d0d0d0;
+  margin-bottom: 2rem;
 }
 
 .about-me-text .conclusion {
   color: #c0c0c0;
   font-style: italic;
+  margin-top: 2rem;
 }

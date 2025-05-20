@@ -144,7 +144,7 @@ const KnowMore = () => {
             />
             <p>
               <strong>IBM Artificial Intelligence Fundamentals</strong>
-              Successfully completed the IBM Artificial Intelligence Fundamentals course, demonstrating proficiency in core AI concepts and applications.
+              Successfully completed the IBM Artificial Intelligence Fundamentals course, demonstrating proficiency in core AI concepts and applications as well as some experience with IBM Watson AI Studio.
             </p>
           </motion.div>
         </div>

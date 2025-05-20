@@ -6,7 +6,7 @@ const ExperiencesPage = () => {
   const experiences = [
     {
       title: 'Research Assistant - VeilCode Labs',
-      period: 'Jan 2025-Mar2025',
+      period: 'Jan 2025-Mar 2025',
       description: `
         <ul>
           <li>Developed an educational cryptography platform built with React.js and Firebase under Dr. Ravi Anand at IIIT Delhi.</li>
