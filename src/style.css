@@ -564,6 +564,10 @@ footer {
   text-align: center;
   transition: transform 0.3s ease;
   width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .know-more .language:hover,
@@ -576,8 +580,10 @@ footer {
 .know-more .technology img,
 .know-more .achievement img {
   width: 80px;
-  height: auto;
+  height: 80px;
+  object-fit: contain;
   margin-bottom: 10px;
+  display: block;
 }
 
 .know-more .language p,
@@ -585,6 +591,8 @@ footer {
 .know-more .achievement p {
   font-size: 1.2rem;
   color: #E0E0E0;
+  margin: 0;
+  text-align: center;
 }
 
 .know-more .achievement {
