@@ -95,7 +95,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             whileHover={{ scale: 1.05 }}
             className="resume-button"
-            href="/porfolio/images/Md_Kaif_Resume.pdf"
+            href="/porfolio/images/Md_Kaif_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
