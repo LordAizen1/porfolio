@@ -89,6 +89,7 @@ const KnowMore = () => {
             { name: 'ReactJS', icon: '/porfolio/images/reacjs.png' },
             { name: 'Firebase', icon: '/porfolio/images/firebase.png' },
             { name: 'NodeJS', icon: '/porfolio/images/nodejs.png' },
+            { name: 'Kaggle', icon: '/porfolio/images/kaggle.png' },
           ].map((technology, index) => (
             <motion.div
               key={technology.name}
