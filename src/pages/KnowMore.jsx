@@ -4,7 +4,7 @@ import ParticlesComponent from '../components/Particles';
 import AmongUsBackground from '../components/Particles';
 
 const KnowMore = () => {
-  const aboutMeText = "I am an undergraduate Computer Science and Engineering student at IIIT Delhi, passionately pursuing software development with a strong focus on both web technologies and cutting-edge Machine Learning. While I enjoy building dynamic, user-friendly applications using modern stacks like React and Node.js, I'm equally committed to mastering ML fundamentals - from tensor operations to neural architectures - to stay aligned with industry demands. My academic projects and self-learning initiatives strategically balance these interests, allowing me to develop full-stack solutions while also exploring AI/ML applications, ensuring I remain adaptable to evolving technological landscapes.";
+  const aboutMeText = "I am an undergraduate Computer Science and Engineering student at IIIT Delhi, with a clear vision of becoming a versatile software developer. My journey is centered around three key areas: software development, data science/analysis, and web development. I'm constantly expanding my skill set, diving deep into data analysis tools and techniques while also building modern web applications. This balanced approach allows me to tackle complex data problems and create user-friendly solutions. Whether it's developing full-stack applications or analyzing datasets to extract meaningful insights, I'm passionate about using technology to solve real-world problems. My goal is to become a well-rounded developer who can seamlessly work across different domains of technology.";
 
   return (
     <motion.div
@@ -90,6 +90,7 @@ const KnowMore = () => {
             { name: 'Firebase', icon: '/porfolio/images/firebase.png' },
             { name: 'NodeJS', icon: '/porfolio/images/nodejs.png' },
             { name: 'Kaggle', icon: '/porfolio/images/kaggle.png' },
+            { name: 'Tableau', icon: '/porfolio/images/tableau.png'},
           ].map((technology, index) => (
             <motion.div
               key={technology.name}

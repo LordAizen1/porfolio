@@ -48,7 +48,7 @@ const Home = () => {
               {
                 title: 'Development',
                 description:
-                  'From Machine Learning to developer – I try to build build machine learning models with Python and deploy them through full-stack applications, bridging the gap between algorithms and end-users.',
+                  'Full-stack development with a focus on data-driven applications. Building modern web solutions while exploring data analysis and visualization to create impactful user experiences.',
               },
               {
                 title: 'Problem Solving',
