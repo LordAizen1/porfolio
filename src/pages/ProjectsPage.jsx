@@ -11,6 +11,13 @@ const ProjectsPage = () => {
         'Developed an Android app integrating document scanning and landmark recognition, built with Jetpack Compose. Features a user-friendly interface, TensorFlow Lite for real-time landmark recognition, PDF generation for scans, and seamless navigation via a main menu. Technologies: Kotlin, Jetpack Compose, TensorFlow Lite, CameraX.',
     },
     {
+      title: 'U.S. Lightning Strikes Analysis',
+      image: '/porfolio/images/tableau.png',
+      description:
+        'A comprehensive data analysis project using Tableau to visualize and analyze over 13 million U.S. lightning strike records from 2009-2018. Created an interactive story featuring time-series plots, heatmaps, and comparative dashboards to uncover spatial and temporal patterns. Focused on visual storytelling and insight-driven analysis for public presentation.',
+      link: 'https://public.tableau.com/app/profile/md.kaif8168/viz/U_S_LightningStrikesStory/U_S_LightningStrikesStory'
+    },
+    {
       title: 'Dr-WebDev',
       image: '/porfolio/images/dr-webdev-high-resolution-logo 1.png',
       description:
