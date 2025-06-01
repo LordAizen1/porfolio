@@ -5,7 +5,7 @@ import ParticlesComponent from '../components/Particles';
 const ExperiencesPage = () => {
   const experiences = [
     {
-      title: 'Research Assistant - VeilCode Labs',
+      title: 'Developer - VeilCode Labs',
       period: 'Jan 2025-Mar 2025',
       description: `
         <ul>
