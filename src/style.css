@@ -874,3 +874,31 @@ footer {
   font-style: italic;
   margin-top: 2rem;
 }
+
+.achievement-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.achievement-link:hover {
+  transform: scale(1.02);
+}
+
+.achievement-link img {
+  margin-right: 20px;
+}
+
+.achievement-link p {
+  margin: 0;
+  text-align: left;
+}
+
+.achievement-link strong {
+  color: #4A90E2;
+  display: block;
+  margin-bottom: 5px;
+}
