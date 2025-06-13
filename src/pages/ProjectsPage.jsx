@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ParticlesComponent from '../components/Particles';
 
 const ProjectsPage = () => {
   const projects = [
@@ -51,7 +50,6 @@ const ProjectsPage = () => {
       transition={{ duration: 0.5 }}
       className="projects-page"
     >
-      <ParticlesComponent />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

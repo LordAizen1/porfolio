@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ParticlesComponent from '../components/Particles';
 
 const ExperiencesPage = () => {
   const experiences = [
@@ -45,22 +44,6 @@ const ExperiencesPage = () => {
       `,
       link: 'https://github.com/gatsbyjs/gatsby/issues/39296'
     },
-    
-    // {
-    //   title: 'Open Source Contributor — Tekdi Technologies (Teachers App on GitHub)',
-    //   period: 'May 2025',
-    //   description: `
-    //     <ul>
-    //       <li>Enhanced <code>README.md</code> with an expanded project overview, tech stack breakdown, setup instructions, and improved usage/testing workflows</li>
-    //       <li>Authored <code>CONTRIBUTING.md</code> detailing contribution workflow, branching strategy, commit standards, code style, and areas for community involvement</li>
-    //       <li>Added <code>ARCHITECTURE.md</code> covering high-level system design, UI/data flow diagrams, component breakdown, and extensibility roadmap</li>
-    //       <li>Structured documentation for clarity, developer onboarding, and long-term maintainability</li>
-    //       <li>Collaborated via GitHub and followed project documentation and contribution standards</li>
-    //     </ul>
-    //   `,
-    //   link: 'https://github.com/tekdi/teachers-app/pull/740'
-    // },
-    // You can add additional experience entries here following the same structure
   ];
 
   return (
@@ -70,7 +53,6 @@ const ExperiencesPage = () => {
       transition={{ duration: 0.5 }}
       className="experiences-page"
     >
-      <ParticlesComponent />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -117,4 +99,4 @@ const ExperiencesPage = () => {
   );
 };
 
-export default ExperiencesPage; 
+export default ExperiencesPage;

@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import ParticlesComponent from '../components/Particles';
-import AmongUsBackground from '../components/Particles';
 
 const Home = () => {
   return (
@@ -11,7 +9,6 @@ const Home = () => {
       transition={{ duration: 0.5 }}
       className="home"
     >
-      <AmongUsBackground />
       <div className="home-content">
         {/* Title */}
         <motion.h1
