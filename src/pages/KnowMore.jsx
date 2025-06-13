@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ParticlesComponent from '../components/Particles';
+import AmongUsBackground from '../components/Particles';
 
 const KnowMore = () => {
   const aboutMeText = "I am an undergraduate Computer Science and Engineering student at IIIT Delhi, with a clear vision of becoming a versatile software developer. My journey is centered around three key areas: software development, data science/analysis, and web development. I'm constantly expanding my skill set, diving deep into data analysis tools and techniques while also building modern web applications. This balanced approach allows me to tackle complex data problems and create user-friendly solutions. Whether it's developing full-stack applications or analyzing datasets to extract meaningful insights, I'm passionate about using technology to solve real-world problems. My goal is to become a well-rounded developer who can seamlessly work across different domains of technology.";
@@ -11,6 +13,7 @@ const KnowMore = () => {
       transition={{ duration: 0.5 }}
       className="know-more"
     >
+      <AmongUsBackground />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

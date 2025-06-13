@@ -14,10 +14,10 @@ import AmongUsBackground from './components/Particles';
 function App() {
   return (
     <Router basename="/porfolio">
-      {/* Single Persistent Background - Rendered once at app level */}
+      {/* Persistent Background - Rendered once */}
       <AmongUsBackground />
       
-      {/* Content Wrapper with proper z-index */}
+      {/* Content Wrapper (z-index: 1) */}
       <div className="content-wrapper">
         <Header />
         <Navbar />
