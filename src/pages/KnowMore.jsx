@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ParticlesComponent from '../components/Particles';
 import AmongUsBackground from '../components/Particles';
 
 const KnowMore = () => {
@@ -21,7 +22,7 @@ const KnowMore = () => {
         About Me
       </motion.h1>
 
-      {/* About Me Section */}
+      {/* About Me Section - Simplified */}
       <motion.article
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
