@@ -22,7 +22,6 @@ const ProjectShowcase = () => {
         'Offline functionality for core features'
       ],
       github: '#',
-      demo: '#',
       status: 'completed'
     },
     {
@@ -40,7 +39,6 @@ const ProjectShowcase = () => {
         'Comparative analysis across different regions',
         'Public dashboard for data exploration'
       ],
-      demo: 'https://public.tableau.com/app/profile/md.kaif8168/viz/U_S_LightningStrikesStory/U_S_LightningStrikesStory',
       status: 'completed'
     },
     {
@@ -58,7 +56,6 @@ const ProjectShowcase = () => {
         'User progress tracking and analytics',
         'Responsive design for all devices'
       ],
-      demo: 'https://cryptolab.iiitd.edu.in/',
       status: 'completed'
     },
     {
@@ -94,7 +91,6 @@ const ProjectShowcase = () => {
         'Local storage for data persistence',
         'Responsive design for all screen sizes'
       ],
-      demo: 'https://lordaizen1.github.io/task-board-app/',
       github: '#',
       status: 'completed'
     },
@@ -153,7 +149,7 @@ const ProjectShowcase = () => {
   };
 
   return (
-    <div className="project-showcase">
+    <div className="project-showcase" id="projects-section">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -227,17 +223,6 @@ const ProjectShowcase = () => {
                 </div>
                 
                 <div className="project-actions">
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link demo"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Live Demo
-                    </a>
-                  )}
                   {project.github && (
                     <a
                       href={project.github}
@@ -246,7 +231,7 @@ const ProjectShowcase = () => {
                       className="project-link github"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      GitHub
+                      View Details
                     </a>
                   )}
                 </div>
@@ -311,29 +296,6 @@ const ProjectShowcase = () => {
                         <span key={index} className="tech-tag">{tech}</span>
                       ))}
                     </div>
-                  </div>
-                  
-                  <div className="modal-actions">
-                    {selectedProject.demo && (
-                      <a
-                        href={selectedProject.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="modal-link demo"
-                      >
-                        View Live Demo
-                      </a>
-                    )}
-                    {selectedProject.github && (
-                      <a
-                        href={selectedProject.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="modal-link github"
-                      >
-                        View Source Code
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>

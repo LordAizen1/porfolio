@@ -1,11 +1,11 @@
 import React from 'react';
-// import Navbar from './Navbar'; // Ensure Navbar is imported correctly
+import Navbar from './Navbar';
 
 const Header = () => {
   return (
     <header>
       <h1 className="logo-text">ポートフォリオ</h1>
-      {/* <Navbar /> */}
+      <Navbar />
     </header>
   );
 };
