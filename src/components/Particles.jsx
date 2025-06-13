@@ -20,47 +20,27 @@ const AmongUsBackground = () => {
       zIndex: -1
     },
     detectRetina: true,
-    fpsLimit: 120,
+    fpsLimit: 60,
     interactivity: {
       detectsOn: "window",
       events: {
         onClick: {
-          enable: true,
+          enable: false,
           mode: "push"
         },
         onHover: {
-          enable: true,
-          mode: "repulse",
-          parallax: {
-            enable: false,
-            force: 2,
-            smooth: 10
-          }
+          enable: false,
+          mode: "repulse"
         },
         resize: {
           delay: 0.5,
           enable: true
         }
-      },
-      modes: {
-        push: {
-          default: true,
-          groups: [],
-          quantity: 4
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4,
-          factor: 100,
-          speed: 1,
-          maxSpeed: 50,
-          easing: "ease-out-quad"
-        }
       }
     },
     particles: {
       color: {
-        value: ["#667eea", "#764ba2", "#ffffff", "#4facfe", "#00f2fe"]
+        value: ["#667eea", "#764ba2", "#ffffff"]
       },
       links: {
         blink: false,
@@ -68,21 +48,10 @@ const AmongUsBackground = () => {
           value: "#667eea"
         },
         consent: false,
-        distance: 150,
+        distance: 120,
         enable: true,
         frequency: 1,
-        opacity: 0.3,
-        shadow: {
-          blur: 5,
-          color: {
-            value: "#667eea"
-          },
-          enable: false
-        },
-        triangles: {
-          enable: false,
-          frequency: 1
-        },
+        opacity: 0.2,
         width: 1,
         warp: false
       },
@@ -91,46 +60,24 @@ const AmongUsBackground = () => {
           offset: 0,
           value: 90
         },
-        attract: {
-          distance: 200,
-          enable: false,
-          rotate: {
-            x: 600,
-            y: 1200
-          }
-        },
         direction: "none",
         enable: true,
-        path: {},
         outModes: {
-          default: "bounce",
-          bottom: "bounce",
-          left: "bounce",
-          right: "bounce",
-          top: "bounce"
+          default: "bounce"
         },
         random: false,
         size: false,
-        speed: 2,
-        straight: false,
-        trail: {
-          enable: false,
-          length: 10,
-          fillColor: {
-            value: "#000000"
-          }
-        },
-        vibrate: false,
-        warp: false
+        speed: 1,
+        straight: false
       },
       number: {
         density: {
           enable: true,
-          area: 800,
+          area: 1000,
           factor: 1000
         },
         limit: 0,
-        value: 80
+        value: 50
       },
       opacity: {
         random: {
@@ -139,12 +86,12 @@ const AmongUsBackground = () => {
         },
         value: {
           min: 0.1,
-          max: 0.8
+          max: 0.5
         },
         animation: {
           count: 0,
           enable: true,
-          speed: 1,
+          speed: 0.5,
           decay: 0,
           sync: false,
           destroy: "none",
@@ -153,12 +100,7 @@ const AmongUsBackground = () => {
         }
       },
       shape: {
-        type: ["circle", "triangle", "polygon"],
-        options: {
-          polygon: {
-            sides: 6
-          }
-        }
+        type: "circle"
       },
       size: {
         random: {
@@ -167,12 +109,12 @@ const AmongUsBackground = () => {
         },
         value: {
           min: 1,
-          max: 4
+          max: 3
         },
         animation: {
           count: 0,
           enable: true,
-          speed: 5,
+          speed: 2,
           decay: 0,
           sync: false,
           destroy: "none",
@@ -189,19 +131,16 @@ const AmongUsBackground = () => {
         options: {
           particles: {
             number: {
-              value: 40
+              value: 30
             },
             move: {
-              speed: 1
+              speed: 0.5
             }
           }
         }
       }
     ],
     smooth: false,
-    style: {},
-    themes: [],
-    zLayers: 100,
     emitters: [
       {
         autoPlay: true,
@@ -211,7 +150,7 @@ const AmongUsBackground = () => {
         },
         rate: {
           quantity: 1,
-          delay: 8
+          delay: 12
         },
         shape: {
           options: {},
@@ -239,10 +178,10 @@ const AmongUsBackground = () => {
             }
           },
           size: {
-            value: 25
+            value: 20
           },
           move: {
-            speed: 6,
+            speed: 3,
             outModes: {
               default: "destroy",
               right: "destroy"
@@ -259,17 +198,17 @@ const AmongUsBackground = () => {
             },
             animation: {
               enable: true,
-              speed: 8,
+              speed: 5,
               sync: false
             }
           },
           opacity: {
-            value: 0.8
+            value: 0.6
           }
         },
         position: {
           x: -5,
-          y: 35
+          y: 40
         }
       }
     ],
