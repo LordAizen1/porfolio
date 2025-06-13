@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import SkillsShowcase from '../components/SkillsShowcase';
 import ProjectShowcase from '../components/ProjectShowcase';
 import InteractiveTimeline from '../components/InteractiveTimeline';
@@ -35,6 +34,8 @@ const Home = () => {
     { number: '100%', label: 'Passion for Code' }
   ];
 
+  const aboutMeText = "I am an undergraduate Computer Science and Engineering student at IIIT Delhi, with a clear vision of becoming a versatile software developer. My journey is centered around three key areas: software development, data science/analysis, and web development. I'm constantly expanding my skill set, diving deep into data analysis tools and techniques while also building modern web applications. This balanced approach allows me to tackle complex data problems and create user-friendly solutions. Whether it's developing full-stack applications or analyzing datasets to extract meaningful insights, I'm passionate about using technology to solve real-world problems. My goal is to become a well-rounded developer who can seamlessly work across different domains of technology.";
+
   return (
     <motion.div
       className="home"
@@ -44,7 +45,7 @@ const Home = () => {
     >
       <div className="home-content">
         {/* Hero Section */}
-        <motion.section className="hero-section" variants={itemVariants}>
+        <motion.section className="hero-section" id="hero-section" variants={itemVariants}>
           <motion.div
             className="hero-badge"
             initial={{ scale: 0 }}
@@ -76,9 +77,16 @@ const Home = () => {
             className="hero-actions"
             variants={itemVariants}
           >
-            <Link to="/projects" className="cta-primary">
+            <a
+              href="#projects-section"
+              className="cta-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects-section').scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               View My Work
-            </Link>
+            </a>
             <a
               href="/porfolio/images/Md_Kaif_CV.pdf"
               target="_blank"
@@ -107,6 +115,19 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+        </motion.section>
+
+        {/* About Me Section */}
+        <motion.section className="about-section" id="about-section" variants={itemVariants}>
+          <motion.article
+            className="centered"
+            variants={itemVariants}
+          >
+            <strong className="imp">About Me</strong>
+            <p id="me">
+              {aboutMeText}
+            </p>
+          </motion.article>
         </motion.section>
 
         {/* What I Do Section */}
@@ -154,17 +175,17 @@ const Home = () => {
         </motion.section>
 
         {/* Skills Showcase */}
-        <motion.section variants={itemVariants}>
+        <motion.section variants={itemVariants} id="skills-section">
           <SkillsShowcase />
         </motion.section>
 
         {/* Interactive Timeline */}
-        <motion.section variants={itemVariants}>
+        <motion.section variants={itemVariants} id="timeline-section">
           <InteractiveTimeline />
         </motion.section>
 
         {/* Featured Projects */}
-        <motion.section variants={itemVariants}>
+        <motion.section variants={itemVariants} id="projects-section">
           <ProjectShowcase />
         </motion.section>
 
@@ -181,9 +202,16 @@ const Home = () => {
               or just want to chat about the latest in tech, I'd love to connect with you!
             </p>
             <div className="cta-actions">
-              <Link to="/know-more" className="cta-primary">
+              <a
+                href="#about-section"
+                className="cta-primary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Get to Know Me
-              </Link>
+              </a>
               <a
                 href="mailto:mohdkaif2003@gmail.com"
                 className="cta-secondary"
