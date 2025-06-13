@@ -92,14 +92,10 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   z-index: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .home h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 30px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -107,7 +103,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-  text-align: center;
 }
 
 .intro-text {
@@ -120,28 +115,20 @@ body {
   border-radius: 16px;
   padding: 30px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  width: 100%;
-  max-width: 800px;
 }
 
 .highlights {
   margin: 60px 0;
   background-color: transparent;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .highlights h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 40px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-align: center;
 }
 
 .highlight-cards {
@@ -149,9 +136,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   margin-top: 40px;
-  width: 100%;
-  max-width: 1200px;
-  justify-items: center;
 }
 
 .card {
@@ -165,8 +149,6 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 350px;
 }
 
 .card:hover {
@@ -197,13 +179,10 @@ body {
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
 }
 
 .call-to-action h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -302,10 +281,6 @@ nav {
   max-width: 800px;
   transition: transform 0.2s ease;
   text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .centered strong {
@@ -325,10 +300,6 @@ article {
   transition: all 0.2s ease;
   padding: 30px;
   border-radius: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Enhanced Links */
@@ -370,17 +341,12 @@ a:hover {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.9);
-  width: 100%;
 }
 
 /* Enhanced Contact Section */
 #con {
   text-align: center;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .contact {
@@ -419,9 +385,6 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 25px 0;
   margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #last-footer {
@@ -469,20 +432,16 @@ footer {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .know-more h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   margin-bottom: 40px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-  text-align: center;
 }
 
 .know-more section {
@@ -494,20 +453,15 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .know-more section h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 40px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-align: center;
 }
 
 .know-more .languages-list,
@@ -516,9 +470,6 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
   margin-top: 40px;
-  width: 100%;
-  max-width: 1000px;
-  justify-items: center;
 }
 
 .know-more .achievements-list {
@@ -526,9 +477,6 @@ footer {
   flex-direction: column;
   gap: 30px;
   margin-top: 40px;
-  width: 100%;
-  max-width: 1000px;
-  align-items: center;
 }
 
 .know-more .language,
@@ -545,8 +493,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 200px;
 }
 
 .know-more .language:hover,
@@ -592,7 +538,6 @@ footer {
   text-align: left;
   width: 100%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  max-width: 800px;
 }
 
 .know-more .achievement:hover {
@@ -606,7 +551,6 @@ footer {
   margin-right: 30px;
   border-radius: 12px;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-  flex-shrink: 0;
 }
 
 .know-more .achievement p {
@@ -646,20 +590,16 @@ footer {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .projects-page h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   margin-bottom: 60px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-  text-align: center;
 }
 
 .projects-page .project-section {
@@ -668,8 +608,6 @@ footer {
   gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
-  align-items: center;
 }
 
 .projects-page .project {
@@ -683,8 +621,6 @@ footer {
   align-items: center;
   gap: 40px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%;
-  max-width: 1000px;
 }
 
 .projects-page .project:nth-child(even) {
@@ -702,7 +638,7 @@ footer {
 }
 
 .projects-page .project h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 25px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -763,29 +699,22 @@ footer {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .experiences-page h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   margin-bottom: 60px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-  text-align: center;
 }
 
 .experience-section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 100%;
-  max-width: 1000px;
-  align-items: center;
 }
 
 .experience {
@@ -797,7 +726,6 @@ footer {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%;
 }
 
 .experience:hover {
@@ -814,7 +742,7 @@ footer {
 }
 
 .experience-header h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -964,11 +892,8 @@ footer {
 
 /* Responsive Design Enhancements */
 @media (max-width: 768px) {
-  .home h1,
-  .know-more h1,
-  .projects-page h1,
-  .experiences-page h1 {
-    font-size: 2.2rem;
+  .home h1 {
+    font-size: 2.5rem;
   }
   
   .logo-text {
@@ -1034,20 +959,17 @@ footer {
   footer {
     padding: 20px 0;
   }
-
-  .highlights h2,
-  .call-to-action h2,
-  .know-more section h2 {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .home h1,
+  .home h1 {
+    font-size: 2rem;
+  }
+  
   .know-more h1,
   .projects-page h1,
   .experiences-page h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   
   .card {
@@ -1074,20 +996,6 @@ footer {
     margin: 2px;
     padding: 5px 10px;
     font-size: 0.8rem;
-  }
-
-  .highlights h2,
-  .call-to-action h2,
-  .know-more section h2 {
-    font-size: 1.6rem;
-  }
-
-  .projects-page .project h2 {
-    font-size: 1.6rem;
-  }
-
-  .experience-header h2 {
-    font-size: 1.5rem;
   }
 }
 
