@@ -6,37 +6,37 @@ const SkillsShowcase = () => {
     {
       title: 'Programming Languages',
       skills: [
-        { name: 'Java', icon: '/porfolio/images/java.png' },
-        { name: 'Python', icon: '/porfolio/images/python.png' },
-        { name: 'JavaScript', icon: '/porfolio/images/JS.png' },
-        { name: 'C++', icon: '/porfolio/images/c++.png' },
-        { name: 'Go', icon: '/porfolio/images/GO.png' },
+        { name: 'Java', level: 90, icon: '/porfolio/images/java.png' },
+        { name: 'Python', level: 85, icon: '/porfolio/images/python.png' },
+        { name: 'JavaScript', level: 80, icon: '/porfolio/images/JS.png' },
+        { name: 'C++', level: 75, icon: '/porfolio/images/c++.png' },
+        { name: 'Go', level: 70, icon: '/porfolio/images/GO.png' },
       ]
     },
     {
       title: 'Web Technologies',
       skills: [
-        { name: 'React.js', icon: '/porfolio/images/reacjs.png' },
-        { name: 'Node.js', icon: '/porfolio/images/nodejs.png' },
-        { name: 'HTML/CSS', icon: '/porfolio/images/html.png' },
-        { name: 'Firebase', icon: '/porfolio/images/firebase.png' },
+        { name: 'React.js', level: 85, icon: '/porfolio/images/reacjs.png' },
+        { name: 'Node.js', level: 80, icon: '/porfolio/images/nodejs.png' },
+        { name: 'HTML/CSS', level: 90, icon: '/porfolio/images/html.png' },
+        { name: 'Firebase', level: 75, icon: '/porfolio/images/firebase.png' },
       ]
     },
     {
       title: 'Data & Analytics',
       skills: [
-        { name: 'Tableau', icon: '/porfolio/images/tableau.png' },
-        { name: 'Kaggle', icon: '/porfolio/images/kaggle.png' },
-        { name: 'Google Colab', icon: '/porfolio/images/colab.png' },
+        { name: 'Tableau', level: 85, icon: '/porfolio/images/tableau.png' },
+        { name: 'Kaggle', level: 80, icon: '/porfolio/images/kaggle.png' },
+        { name: 'Google Colab', level: 90, icon: '/porfolio/images/colab.png' },
       ]
     },
     {
       title: 'Tools & Platforms',
       skills: [
-        { name: 'Git/GitHub', icon: '/porfolio/images/github.png' },
-        { name: 'VS Code', icon: '/porfolio/images/vscode.png' },
-        { name: 'IntelliJ IDEA', icon: '/porfolio/images/intellij.png' },
-        { name: 'Ubuntu/Linux', icon: '/porfolio/images/ubuntu.png' },
+        { name: 'Git/GitHub', level: 85, icon: '/porfolio/images/github.png' },
+        { name: 'VS Code', level: 90, icon: '/porfolio/images/vscode.png' },
+        { name: 'IntelliJ IDEA', level: 85, icon: '/porfolio/images/intellij.png' },
+        { name: 'Ubuntu/Linux', level: 75, icon: '/porfolio/images/ubuntu.png' },
       ]
     }
   ];
@@ -65,7 +65,6 @@ const SkillsShowcase = () => {
   return (
     <motion.section
       className="skills-showcase"
-      id="skills-section"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -95,6 +94,15 @@ const SkillsShowcase = () => {
                   <div className="skill-header">
                     <img src={skill.icon} alt={skill.name} className="skill-icon" />
                     <span className="skill-name">{skill.name}</span>
+                    <span className="skill-percentage">{skill.level}%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <motion.div
+                      className="skill-progress"
+                      initial={{ width: 0 }}
+                      animate={{ width: `${skill.level}%` }}
+                      transition={{ duration: 1, delay: categoryIndex * 0.1 + skillIndex * 0.1 }}
+                    />
                   </div>
                 </motion.div>
               ))}
