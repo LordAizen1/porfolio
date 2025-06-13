@@ -51,16 +51,30 @@ const InteractiveTimeline = () => {
     {
       id: 4,
       year: '2023',
+      title: 'Advanced Programming & Projects',
+      type: 'education',
+      description: 'Deepened programming skills and started building complex projects at IIIT Delhi.',
+      details: [
+        'Mastered advanced data structures and algorithms',
+        'Built multiple full-stack applications',
+        'Participated in coding competitions and hackathons',
+        'Started contributing to open source projects'
+      ],
+      color: '#2563eb'
+    },
+    {
+      id: 5,
+      year: '2022',
       title: 'Started at IIIT Delhi',
       type: 'education',
       description: 'Began Computer Science and Engineering studies at prestigious IIIT Delhi.',
       details: [
-        'Focus on software development and data science',
-        'Active participation in coding competitions',
-        'Building strong foundation in CS fundamentals',
-        'Engaging in research projects'
+        'Started with programming fundamentals in Java and Python',
+        'Learned core CS concepts: data structures, algorithms, databases',
+        'Built first web applications using HTML, CSS, and JavaScript',
+        'Discovered passion for software development and data science'
       ],
-      color: '#2563eb'
+      color: '#06b6d4'
     }
   ];
 
@@ -78,7 +92,7 @@ const InteractiveTimeline = () => {
   };
 
   return (
-    <div className="timeline-container">
+    <div className="timeline-container" id="timeline-section">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
