@@ -82,17 +82,15 @@ const KnowMore = () => {
             { name: 'Intellij', icon: '/porfolio/images/intellij.png' },
             { name: 'VS Code', icon: '/porfolio/images/vscode.png' },
             { name: 'Git', icon: '/porfolio/images/git.png' },
-            { name: 'Ubuntu', icon: '/porfolio/images/ubuntu.png' },
+            { name: 'Linux', icon: '/porfolio/images/linux.png' },
             { name: 'GitHub', icon: '/porfolio/images/github.png' },
             { name: 'Colab', icon: '/porfolio/images/colab.png' },
-            { name: 'Grok', icon: '/porfolio/images/grok.png' },
+            { name: 'Claude Chat', icon: '/porfolio/images/claude.png' },
             { name: 'ReactJS', icon: '/porfolio/images/reacjs.png' },
             { name: 'Firebase', icon: '/porfolio/images/firebase.png' },
             { name: 'NodeJS', icon: '/porfolio/images/nodejs.png' },
             { name: 'Kaggle', icon: '/porfolio/images/kaggle.png' },
             { name: 'Tableau', icon: '/porfolio/images/tableau.png'},
-            { name: 'n8n', icon: '/porfolio/images/n8n.png'},
-            { name: 'Make', icon: '/porfolio/images/make.png'},
           ].map((technology, index) => (
             <motion.div
               key={technology.name}

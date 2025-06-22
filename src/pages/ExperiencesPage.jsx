@@ -4,6 +4,23 @@ import ParticlesComponent from '../components/Particles';
 
 const ExperiencesPage = () => {
   const experiences = [
+        {
+      title: 'Intern, LLM Engineer',
+      period: 'June 2025–Present',
+      description: `
+    <div>
+      <strong>Project:</strong> Agentic Applications<br/>
+      <strong>Company:</strong> Alpine Privacy<br/>
+      <em>Alpine Privacy is an early-stage startup focused on privacy-first AI solutions.</em>
+    </div>
+        <ul>
+          <li>Build and fine-tuned LLM-based agentic applications for privacy-centric use cases.</li>
+          <li>Contributed to the development of scalable AI pipelines in a fast-paced startup environment.</li>
+          <li>Utilized various tools such as NER, LLMs to accelerate model development and deployment.</li>
+        </ul>
+      `,
+      // No public link, so omit or add if available
+    },
     {
       title: 'Developer - VeilCode Labs',
       period: 'Jan 2025-Mar 2025',
