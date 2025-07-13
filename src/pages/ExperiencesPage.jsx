@@ -11,7 +11,7 @@ const ExperiencesPage = () => {
     <div>
       <strong>Project:</strong> Agentic Applications<br/>
       <strong>Company:</strong> Alpine Privacy<br/>
-      <em>Alpine Privacy is an early-stage startup focused on privacy-first AI solutions.</em>
+      <em>Alpine Privacy is an early-stage US/UAE based startup focused on privacy-first AI solutions.</em>
     </div>
         <ul>
           <li>Build and fine-tuned LLM-based agentic applications for privacy-centric use cases.</li>
