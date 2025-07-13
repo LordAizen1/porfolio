@@ -124,9 +124,20 @@ const ExperiencesPage = () => {
               </h2>
               <p className="experience-period">{experience.period}</p>
             </div>
-            <div className="experience-description">
-              <div dangerouslySetInnerHTML={{ __html: experience.description }} />
-            </div>
+            {experience.title === 'Intern, LLM Engineer' ? (
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginTop: '8px' }}>
+                <div style={{ flex: 1 }}>
+                  <div className="experience-description">
+                    <div dangerouslySetInnerHTML={{ __html: experience.description }} />
+                  </div>
+                </div>
+                <img src="/porfolio/images/alpineprivacy.png" alt="Alpine Privacy Logo" style={{ height: '40px', objectFit: 'contain' }} />
+              </div>
+            ) : (
+              <div className="experience-description">
+                <div dangerouslySetInnerHTML={{ __html: experience.description }} />
+              </div>
+            )}
           </motion.article>
         ))}
       </motion.section>
@@ -134,4 +145,4 @@ const ExperiencesPage = () => {
   );
 };
 
-export default ExperiencesPage; 
+export default ExperiencesPage;
