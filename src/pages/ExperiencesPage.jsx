@@ -9,7 +9,6 @@ const ExperiencesPage = () => {
       period: 'June 2025–Present',
       description: `
     <div>
-      <strong>Project:</strong> Agentic Applications<br/>
       <strong>Company:</strong> Alpine Privacy<br/>
       <em>Alpine Privacy is an early-stage US/UAE based startup focused on privacy-first AI solutions.</em>
     </div>
@@ -25,12 +24,14 @@ const ExperiencesPage = () => {
       title: 'Developer - VeilCode Labs',
       period: 'Jan 2025-Mar 2025',
       description: `
+      <div>
+        <strong>Institution:</strong> IIIT-Delhi<br/>
+      </div>
         <ul>
           <li>Developed an educational cryptography platform built with React.js and Firebase under Dr. Ravi Anand at IIIT Delhi.</li>
           <li>Implemented comprehensive course materials, interactive labs, and research resources to enhance cryptography education.</li>
           <li>Created an admin panel with CRUD functionality for managing educational content.</li>
           <li>Designed and built a structured and accessible digital learning environment focused on cryptography concepts.</li>
-          <li>Technologies used: React.js, Firebase, HTML/CSS, JavaScript</li>
         </ul>
       `,
       link: 'https://cryptolab.iiitd.edu.in/'
@@ -131,7 +132,16 @@ const ExperiencesPage = () => {
                     <div dangerouslySetInnerHTML={{ __html: experience.description }} />
                   </div>
                 </div>
-                <img src="/porfolio/images/alpineprivacy.png" alt="Alpine Privacy Logo" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="/porfolio/images/alpineprivacy.png" alt="Alpine Privacy Logo" style={{ height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
+              </div>
+            ) : experience.title === 'Developer - VeilCode Labs' ? (
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginTop: '8px' }}>
+                <div style={{ flex: 1 }}>
+                  <div className="experience-description">
+                    <div dangerouslySetInnerHTML={{ __html: experience.description }} />
+                  </div>
+                </div>
+                <img src="/porfolio/images/iiitd.png" alt="IIIT-Delhi Logo" style={{ height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
               </div>
             ) : (
               <div className="experience-description">
