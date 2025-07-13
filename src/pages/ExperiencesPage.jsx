@@ -114,6 +114,13 @@ const ExperiencesPage = () => {
             className="experience"
           >
             <div className="experience-header">
+              {/* Show logo above title on mobile for specific experiences */}
+              {experience.title === 'Intern, LLM Engineer' && (
+                <img src="/porfolio/images/alpineprivacy.png" alt="Alpine Privacy Logo" className="experience-logo-mobile" style={{ display: 'none', height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
+              )}
+              {experience.title === 'Developer - VeilCode Labs' && (
+                <img src="/porfolio/images/iiitd.png" alt="IIIT-Delhi Logo" className="experience-logo-mobile" style={{ display: 'none', height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
+              )}
               <h2>
                 {experience.link ? (
                   <a href={experience.link} target="_blank" rel="noopener noreferrer" className="experience-link">
@@ -125,23 +132,24 @@ const ExperiencesPage = () => {
               </h2>
               <p className="experience-period">{experience.period}</p>
             </div>
+            {/* Desktop flex row for logo and description, mobile stacks logo above title */}
             {experience.title === 'Intern, LLM Engineer' ? (
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginTop: '8px' }}>
+              <div className="experience-flex-mobile" style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginTop: '8px' }}>
                 <div style={{ flex: 1 }}>
                   <div className="experience-description">
                     <div dangerouslySetInnerHTML={{ __html: experience.description }} />
                   </div>
                 </div>
-                <img src="/porfolio/images/alpineprivacy.png" alt="Alpine Privacy Logo" style={{ height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
+                <img src="/porfolio/images/alpineprivacy.png" alt="Alpine Privacy Logo" className="experience-logo-desktop" style={{ height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
               </div>
             ) : experience.title === 'Developer - VeilCode Labs' ? (
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginTop: '8px' }}>
+              <div className="experience-flex-mobile" style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginTop: '8px' }}>
                 <div style={{ flex: 1 }}>
                   <div className="experience-description">
                     <div dangerouslySetInnerHTML={{ __html: experience.description }} />
                   </div>
                 </div>
-                <img src="/porfolio/images/iiitd.png" alt="IIIT-Delhi Logo" style={{ height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
+                <img src="/porfolio/images/iiitd.png" alt="IIIT-Delhi Logo" className="experience-logo-desktop" style={{ height: '90px', maxWidth: '180px', objectFit: 'contain' }} />
               </div>
             ) : (
               <div className="experience-description">
@@ -151,6 +159,19 @@ const ExperiencesPage = () => {
           </motion.article>
         ))}
       </motion.section>
+      <style>{`
+        @media (max-width: 600px) {
+          .experience-logo-mobile {
+            display: block;
+            margin: 0 auto 8px auto;
+            height: 70px !important;
+            max-width: 120px !important;
+          }
+          .experience-flex-mobile {
+            display: block !important;
+          }
+        }
+      `}</style>
     </motion.div>
   );
 };
