@@ -4,6 +4,22 @@ import ParticlesComponent from '../components/Particles';
 
 const ProjectsPage = () => {
   const projects = [
+        {
+      title: 'DP-Fusion',
+      image: '/porfolio/images/dp-fusion.png', // Placeholder image, update if you have a project-specific image
+      description:
+        'DP-Fusion is a document sanitization platform developed at Alpine Privacy, where I focused on both the frontend and backend development. Users can upload up to 5 files (each up to 10MB) in DOCX, PPTX, PDF, and TXT formats, which are processed locally for sensitive information removal. The application first runs a Named Entity Recognition (NER) system (spaCy, BERT, Flair) to detect PII, then applies DP-Fusion—a custom decoding strategy that provides theoretical privacy guarantees. All uploaded data is deleted after sanitization, ensuring privacy and security.<br /><br />'
+        + '<b>Technologies:</b> React 18.3 (TypeScript), Vite, Redux Toolkit, Tailwind CSS, React Router, Lucide React, Lottie, Node.js, Multer, Winston, Axios, express-session, PyTorch, Transformers, Presidio, spaCy, FastAPI, Docker, Nginx, Linux. '
+      ,
+      link: 'https://spec-negotiations-multimedia-cod.trycloudflare.com/'
+    },
+    {
+      title: 'AI For Architects',
+      image: '/porfolio/images/ai-for-architects.png', // Placeholder image, update if you have a project-specific image
+      description:
+        'A full-stack web application that empowers architects to generate photorealistic interior design visualizations using OpenAI\'s advanced image generation models (DALL-E 2/3, GPT-Image-1). The platform offers comprehensive customization options including room dimensions, furniture styles, lighting conditions, and viewing angles, with built-in image editing capabilities and user management system.<br /><br /><b>Technologies:</b> React 18, TailwindCSS, Node.js, Express.js, MongoDB, OpenAI API, JWT Authentication, CloudFlare.',
+      link: 'https://ai-for-architects.com' // Replace with actual link if available
+    },
     {
       title: 'Multi-Scan App',
       image: '/porfolio/images/multi-scan.png',
@@ -35,13 +51,14 @@ const ProjectsPage = () => {
       description:
         'A simple shell program called "Dungeon" written in C. SIGINT signal handling <br /> with lots of supported shell commands, pipeline handling, and maintaining <br /> a record of process\'s PID, start time, and end time, which gets shown at exit.',
     },
-    {
-      title: 'Task-Board-App',
-      image: '/porfolio/images/task-board.png',
-      description: 
-      '(A small fun side project)A modern task management application with drag-and-drop functionality, featuring a congratulatory animation when tasks are completed. Includes task management features (add, edit, delete), and supports both Light and Dark mode themes.',
-      link: 'https://lordaizen1.github.io/task-board-app/'
-    },
+    // {
+    //   title: 'Task-Board-App',
+    //   image: '/porfolio/images/task-board.png',
+    //   description: 
+    //   '(A small fun side project)A modern task management application with drag-and-drop functionality, featuring a congratulatory animation when tasks are completed. Includes task management features (add, edit, delete), and supports both Light and Dark mode themes.',
+    //   link: 'https://lordaizen1.github.io/task-board-app/'
+    // },
+
   ];
 
   return (
