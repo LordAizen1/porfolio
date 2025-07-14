@@ -32,13 +32,7 @@ const ProjectsPage = () => {
       description:
         'A comprehensive data analysis project using Tableau to visualize and analyze over 13 million U.S. lightning strike records from 2009-2018. Created an interactive story featuring time-series plots, heatmaps, and comparative dashboards to uncover spatial and temporal patterns. Focused on visual storytelling and insight-driven analysis for public presentation.',
       link: 'https://public.tableau.com/app/profile/md.kaif8168/viz/U_S_LightningStrikesStory/U_S_LightningStrikesStory'
-    },
-    {
-      title: 'Dr-WebDev',
-      image: '/porfolio/images/dr-webdev-high-resolution-logo 1.png',
-      description:
-        'Dr-WebDev is one of the fun projects I\'ve made. <br /> Creating this project was like hitting two birds with one stone. <br /> I got to learn front-end development and let people know about me.',
-    },   
+    },  
     {
       title: 'StickHero',
       image: '/porfolio/images/stickhero.png',
