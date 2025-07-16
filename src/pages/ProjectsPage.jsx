@@ -4,7 +4,14 @@ import ParticlesComponent from '../components/Particles';
 
 const ProjectsPage = () => {
   const projects = [
-        {
+    {
+      title: 'AI For Architects',
+      image: '/porfolio/images/ai-for-architects.png', // Placeholder image, update if you have a project-specific image
+      description:
+        'A comprehensive full-stack application enabling architects to generate photorealistic interior visualizations using OpenAI models (DALL-E 2/3, GPT-Image-1) and create dynamic videos with Google Veo API. Features include detailed room customization, image editing, video generation from images, portfolio-based style extraction using GPT-4o Vision, admin dashboard with user management, and quota systems for both images and videos.<br /><br /><b>Technologies:</b> React 18, TailwindCSS, Node.js, Express.js, MongoDB, OpenAI API, Google Veo API, GPT-4o Vision, JWT Authentication, CloudFlare, Google Cloud Storage',
+      link: 'https://ai-for-architects.com' // Replace with actual link if available
+    },
+    {
       title: 'DP-Fusion',
       image: '/porfolio/images/dp-fusion.png', // Placeholder image, update if you have a project-specific image
       description:
@@ -13,13 +20,7 @@ const ProjectsPage = () => {
       ,
       link: 'https://spec-negotiations-multimedia-cod.trycloudflare.com/'
     },
-    {
-      title: 'AI For Architects',
-      image: '/porfolio/images/ai-for-architects.png', // Placeholder image, update if you have a project-specific image
-      description:
-        'A full-stack web application developed at Alpine Privacy that empowers architects to generate photorealistic interior design visualizations using OpenAI\'s advanced image generation models (DALL-E 2/3, GPT-Image-1). The platform offers comprehensive customization options including room dimensions, furniture styles, lighting conditions, and viewing angles, with built-in image editing capabilities and user management system.<br /><br /><b>Technologies:</b> React 18, TailwindCSS, Node.js, Express.js, MongoDB, OpenAI API, JWT Authentication, CloudFlare.',
-      link: 'https://ai-for-architects.com' // Replace with actual link if available
-    },
+
     {
       title: 'Multi-Scan App',
       image: '/porfolio/images/multi-scan.png',
