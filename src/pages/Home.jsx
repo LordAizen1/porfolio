@@ -1,9 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import ParticlesComponent from '../components/Particles';
-import AmongUsBackground from '../components/Particles';
+import TypeWriter from '../components/TypeWriter';
 
 const Home = () => {
+  const titles = [
+    'Full-Stack Developer',
+    'Data Scientist',
+    'Problem Solver',
+    'Software Engineer',
+    'Tech Innovator'
+  ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,7 +17,6 @@ const Home = () => {
       transition={{ duration: 0.5 }}
       className="home"
     >
-      <AmongUsBackground />
       <div className="home-content">
         {/* Title */}
         <motion.h1
@@ -23,17 +28,22 @@ const Home = () => {
         </motion.h1>
 
         {/* Intro Text */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           className="intro-text"
         >
-          Hi👋🏼, I'm <strong>Mohammad Kaif</strong>, a passionate developer and tech enthusiast. 
-          This is my space to showcase my projects, skills, and journey in the world of software development.
-          <br />
-          <span className="faint-text">(And I love cats 🐈)</span>
-        </motion.p>
+          <p>
+            Hello, I'm <strong>Mohammad Kaif</strong>
+          </p>
+          <p style={{ fontSize: '1.5rem', marginTop: '10px' }}>
+            I'm a <TypeWriter texts={titles} typeSpeed={80} deleteSpeed={40} pauseDuration={1500} />
+          </p>
+          <p style={{ marginTop: '20px' }}>
+            Welcome to my portfolio—a showcase of innovative projects, technical expertise, and my passion for building impactful software solutions.
+          </p>
+        </motion.div>
 
         {/* Highlights Section */}
         <motion.section
@@ -46,19 +56,19 @@ const Home = () => {
           <div className="highlight-cards">
             {[
               {
-                title: 'Development',
+                title: 'Full-Stack Development',
                 description:
-                  'Full-stack development with a focus on data-driven applications. Building modern web solutions while exploring data analysis and visualization to create impactful user experiences.',
+                  'Specializing in end-to-end web applications with React, Node.js, and modern frameworks. I build scalable, user-centric solutions that bridge frontend elegance with robust backend architecture.',
               },
               {
-                title: 'Problem Solving',
+                title: 'Data Science & AI',
                 description:
-                  'I love solving complex problems using algorithms and data structures. I regularly participate in coding challenges and hackathons to sharpen my skills.',
+                  'Leveraging machine learning and data analysis to extract meaningful insights from complex datasets. Experienced with Python, TensorFlow, and cloud platforms for ML deployment.',
               },
               {
-                title: 'Learn Something New',
+                title: 'Innovation & Growth',
                 description:
-                  'I strive to learn something new, a new AI, a new technology or a new programming language.',
+                  'Continuously exploring emerging technologies—from quantum computing to AI frameworks—to stay at the forefront of software development and deliver cutting-edge solutions.',
               },
             ].map((card, index) => (
               <motion.div
@@ -83,10 +93,10 @@ const Home = () => {
           transition={{ duration: 0.5, delay: 1.0 }}
           className="call-to-action"
         >
-          <h2>Let's Build Something Amazing Together</h2>
+          <h2>Let's Build Something Extraordinary</h2>
           <p>
-            Whether you're looking to collaborate on a project, hire a developer, or just want to chat about tech, 
-            I'd love to hear from you!
+            Ready to collaborate on innovative projects, discuss technical challenges, or explore opportunities? 
+            I'm passionate about creating solutions that make a difference.
           </p>
           {/* Resume Link */}
           <motion.a

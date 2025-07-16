@@ -1,0 +1,90 @@
+/* Home Page Styles */
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 20px;
+  background-color: transparent;
+}
+
+.home-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.highlights {
+  margin: 40px 0;
+  background-color: transparent;
+}
+
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-primary);
+  max-width: 300px;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.call-to-action {
+  margin: 40px 0;
+  background-color: transparent;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* TypeWriter Styles */
+.typewriter {
+  font-family: 'Gilroy', monospace;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.typewriter-cursor {
+  color: var(--primary-color);
+  font-weight: normal;
+  margin-left: 2px;
+}

@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import ParticlesComponent from '../components/Particles';
+import ImageModal from '../components/ImageModal';
 
 const ProjectsPage = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '' });
+
+  const openModal = (imageSrc, imageAlt) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt });
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+  
   const projects = [
     {
       title: 'AI For Architects',
-      image: '/porfolio/images/ai-for-architects.png', // Placeholder image, update if you have a project-specific image
+      image: '/porfolio/images/ai-for-architects.png',
       description:
-        'A comprehensive full-stack application enabling architects to generate photorealistic interior visualizations using OpenAI models (DALL-E 2/3, GPT-Image-1) and create dynamic videos with Google Veo API. Features include detailed room customization, image editing, video generation from images, portfolio-based style extraction using GPT-4o Vision, admin dashboard with user management, and quota systems for both images and videos.<br /><br /><b>Technologies:</b> React 18, TailwindCSS, Node.js, Express.js, MongoDB, OpenAI API, Google Veo API, GPT-4o Vision, JWT Authentication, CloudFlare, Google Cloud Storage',
-      link: 'https://ai-for-architects.com' // Replace with actual link if available
+        'A comprehensive AI-powered platform that revolutionizes architectural visualization by enabling architects to generate photorealistic interior designs and dynamic videos. The application integrates OpenAI models (DALL-E 2/3, GPT-Image-1) and Google Veo API to transform architectural concepts into compelling visual content. Key features include advanced room customization, real-time image editing, video generation from static images, and portfolio-based style extraction using GPT-4o Vision. Built with enterprise-grade security, user management, and quota systems to serve professional architectural firms.<br /><br /><b>Technologies:</b> React 18, TailwindCSS, Node.js, Express.js, MongoDB, OpenAI API, Google Veo API, GPT-4o Vision, JWT Authentication, CloudFlare, Google Cloud Storage',
+      link: 'https://ai-for-architects.com'
     },
     {
       title: 'DP-Fusion',
       image: '/porfolio/images/dp-fusion.png', // Placeholder image, update if you have a project-specific image
       description:
-        'DP-Fusion is a document sanitization platform developed at Alpine Privacy, where I focused on both the frontend and backend development. Users can upload up to 5 files (each up to 10MB) in DOCX, PPTX, PDF, and TXT formats, which are processed locally for sensitive information removal. The application first runs a Named Entity Recognition (NER) system (spaCy, BERT, Flair) to detect PII, then applies DP-Fusion—a custom decoding strategy that provides theoretical privacy guarantees. All uploaded data is deleted after sanitization, ensuring privacy and security.<br /><br />'
-        + '<b>Technologies:</b> React 18.3 (TypeScript), Vite, Redux Toolkit, Tailwind CSS, React Router, Lucide React, Lottie, Node.js, Multer, Winston, Axios, express-session, PyTorch, Transformers, Presidio, spaCy, FastAPI, Docker, Nginx, Linux. '
-      ,
+        'An enterprise-grade document sanitization platform that automatically removes sensitive information from business documents while maintaining document integrity. Built during my internship at Alpine Privacy, this solution processes multiple file formats (DOCX, PPTX, PDF, TXT) using advanced Named Entity Recognition (NER) systems including spaCy, BERT, and Flair. The platform implements DP-Fusion, a novel decoding strategy that provides theoretical privacy guarantees while ensuring all uploaded data is permanently deleted post-processing.<br /><br /><b>Technologies:</b> React 18.3 (TypeScript), Vite, Redux Toolkit, Tailwind CSS, Node.js, PyTorch, Transformers, Presidio, spaCy, FastAPI, Docker, Nginx',
       link: 'https://spec-negotiations-multimedia-cod.trycloudflare.com/'
     },
 
@@ -25,26 +35,26 @@ const ProjectsPage = () => {
       title: 'Multi-Scan App',
       image: '/porfolio/images/multi-scan.png',
       description:
-        'Developed an Android app integrating document scanning and landmark recognition, built with Jetpack Compose. Features a user-friendly interface, TensorFlow Lite for real-time landmark recognition, PDF generation for scans, and seamless navigation via a main menu. Technologies: Kotlin, Jetpack Compose, TensorFlow Lite, CameraX.',
+        'A sophisticated Android application that combines document scanning capabilities with real-time landmark recognition using advanced machine learning. Built with modern Android development practices, the app features an intuitive interface powered by Jetpack Compose, TensorFlow Lite for efficient on-device ML inference, and automated PDF generation for scanned documents.<br /><br /><b>Technologies:</b> Kotlin, Jetpack Compose, TensorFlow Lite, CameraX, ML Kit'
     },
     {
       title: 'U.S. Lightning Strikes Analysis',
       image: '/porfolio/images/tableau.png',
       description:
-        'A comprehensive data analysis project using Tableau to visualize and analyze over 13 million U.S. lightning strike records from 2009-2018. Created an interactive story featuring time-series plots, heatmaps, and comparative dashboards to uncover spatial and temporal patterns. Focused on visual storytelling and insight-driven analysis for public presentation.',
+        'A comprehensive data visualization project analyzing 13+ million U.S. lightning strike records (2009-2018) to uncover critical meteorological patterns. Developed interactive Tableau dashboards featuring time-series analysis, geospatial heatmaps, and comparative visualizations that reveal seasonal trends and geographic hotspots. The project demonstrates advanced data storytelling techniques and provides actionable insights for weather prediction and safety planning.<br /><br /><b>Technologies:</b> Tableau, Python, Data Analytics, Statistical Analysis',
       link: 'https://public.tableau.com/app/profile/md.kaif8168/viz/U_S_LightningStrikesStory/U_S_LightningStrikesStory'
     },  
     {
       title: 'StickHero',
       image: '/porfolio/images/stickhero.png',
       description:
-        'A replica of the game Stick Hero using JavaFX, implementing different concepts of OOPS, <br /> error-checking, and testing using JUnitTest.',
+        'A fully functional game implementation demonstrating advanced object-oriented programming principles and software engineering best practices. Built using JavaFX, the game features smooth animations, collision detection, and comprehensive error handling. Includes extensive unit testing with JUnit to ensure code reliability and maintainability.<br /><br /><b>Technologies:</b> Java, JavaFX, JUnit, Object-Oriented Programming'
     },
     {
       title: 'Dungeon-Shell',
       image: '/porfolio/images/cmd.png',
       description:
-        'A simple shell program called "Dungeon" written in C. SIGINT signal handling <br /> with lots of supported shell commands, pipeline handling, and maintaining <br /> a record of process\'s PID, start time, and end time, which gets shown at exit.',
+        'A sophisticated command-line shell implementation in C that replicates core Unix shell functionality. Features comprehensive command execution, pipeline processing, signal handling (SIGINT), and process monitoring with detailed logging of PIDs, execution times, and system resources. Demonstrates low-level system programming and operating system concepts.<br /><br /><b>Technologies:</b> C, Unix System Calls, Process Management, Signal Handling, Memory Management'
     },
     // {
     //   title: 'Task-Board-App',
@@ -63,7 +73,6 @@ const ProjectsPage = () => {
       transition={{ duration: 0.5 }}
       className="projects-page"
     >
-      <ParticlesComponent />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -102,12 +111,22 @@ const ProjectsPage = () => {
                 <p dangerouslySetInnerHTML={{ __html: project.description }} />
               </div>
             </div>
-            <div className="project-image-container">
+            <div 
+              className="project-image-container"
+              onClick={() => openModal(project.image, project.title)}
+            >
               <img src={project.image} alt={project.title} className="project-image" />
             </div>
           </motion.article>
         ))}
       </motion.section>
+      
+      <ImageModal 
+        isOpen={modalOpen}
+        onClose={closeModal}
+        imageSrc={selectedImage.src}
+        imageAlt={selectedImage.alt}
+      />
     </motion.div>
   );
 };

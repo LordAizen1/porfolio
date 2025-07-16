@@ -1,10 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ParticlesComponent from '../components/Particles';
-import AmongUsBackground from '../components/Particles';
 
 const KnowMore = () => {
-  const aboutMeText = "I am an undergraduate Computer Science and Engineering student at IIIT Delhi, with a clear vision of becoming a versatile software developer. My journey is centered around three key areas: software development, data science/analysis, and web development. I'm constantly expanding my skill set, diving deep into data analysis tools and techniques while also building modern web applications. This balanced approach allows me to tackle complex data problems and create user-friendly solutions. Whether it's developing full-stack applications or analyzing datasets to extract meaningful insights, I'm passionate about using technology to solve real-world problems. My goal is to become a well-rounded developer who can seamlessly work across different domains of technology.";
+  const aboutMeText = "I am a Computer Science and Engineering student at IIIT Delhi, specializing in full-stack development, data science, and AI-driven solutions. My technical foundation spans modern web technologies, machine learning frameworks, and cloud platforms, enabling me to build scalable applications that solve real-world challenges. From developing enterprise-grade web applications to implementing machine learning models, I focus on delivering solutions that create measurable impact. My experience includes working with startups on privacy-first AI systems, contributing to open-source projects, and building data visualization platforms. I am passionate about leveraging technology to bridge the gap between complex technical problems and user-friendly solutions that drive business value.";
 
   return (
     <motion.div
@@ -13,7 +11,6 @@ const KnowMore = () => {
       transition={{ duration: 0.5 }}
       className="know-more"
     >
-      <AmongUsBackground />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -135,8 +132,8 @@ const KnowMore = () => {
                 className="achievement-icon"
               />
               <p>
-                <strong>Google's Advanced Data Analytics</strong>
-                Completed comprehensive training in data analysis and machine learning, mastering techniques like logistic regression, random forest, and decision trees. Gained hands-on experience in data preprocessing, feature engineering, and model evaluation. Applied these skills to real-world datasets, developing predictive models and extracting actionable insights.            
+                <strong>Google Advanced Data Analytics Certificate</strong><br/>
+                Mastered advanced data analysis and machine learning techniques including logistic regression, random forest, and decision trees. Demonstrated proficiency in data preprocessing, feature engineering, and model evaluation through hands-on projects with real-world datasets, developing predictive models that deliver actionable business insights.
               </p>
             </a>
           </motion.div>
@@ -159,8 +156,8 @@ const KnowMore = () => {
                 className="achievement-icon"
               />
               <p>
-                <strong>IBM QGSS</strong>
-                Selected amongst thousands of participants to be a part of the Summer School. Completed 4 tasks/jobs in IBM's Cloud Quantum Computers. 
+                <strong>IBM Qiskit Global Summer School</strong><br/>
+                Selected from thousands of global applicants for IBM's prestigious quantum computing program. Successfully completed 4 advanced quantum computing tasks using IBM's cloud quantum computers, demonstrating practical applications of quantum algorithms and quantum machine learning.
               </p>
             </a>
           </motion.div>
@@ -183,8 +180,8 @@ const KnowMore = () => {
                 className="achievement-icon"
               />
               <p>
-                <strong>IBM Artificial Intelligence Fundamentals</strong>
-                Successfully completed the IBM Artificial Intelligence Fundamentals course, demonstrating proficiency in core AI concepts and applications as well as some experience with IBM Watson AI Studio.
+                <strong>IBM Artificial Intelligence Fundamentals</strong><br/>
+                Demonstrated proficiency in core AI concepts, machine learning principles, and practical applications. Gained hands-on experience with IBM Watson AI Studio, developing AI-powered solutions and understanding enterprise AI implementation strategies.
               </p>
             </a>
           </motion.div>

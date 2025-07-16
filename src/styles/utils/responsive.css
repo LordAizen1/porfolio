@@ -1,0 +1,240 @@
+/* Responsive Utilities & Media Queries */
+
+/* Contact section */
+#con {
+  text-align: center;
+}
+
+.contact {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  text-align: center;
+}
+
+.contact img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact:hover {
+  transform: scale(1.05);
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: #1A1A1A;
+  padding: 20px 0;
+}
+
+#last-footer {
+  color: var(--primary-color);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-visible .contact {
+  animation: scaleUp 0.5s ease-in-out;
+}
+
+.footer-visible .mail-me {
+  animation-delay: 0.2s;
+}
+
+.footer-visible .contact:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.footer-visible .contact:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Mobile First - Base styles are mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .nav-header {
+    flex-direction: column;
+  }
+  
+  .nav-btn {
+    margin: 2% 0;
+  }
+  
+  .centered {
+    font-size: 20px;
+  }
+  
+  .feedback-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feedback-form,
+  .feedback-section {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .nav-header {
+    flex-direction: row;
+  }
+  
+  .nav-btn {
+    margin: 3% 1%;
+  }
+  
+  .centered {
+    font-size: 22px;
+  }
+  
+  .feedback-container {
+    flex-direction: column;
+  }
+  
+  .feedback-form,
+  .feedback-section {
+    margin: 10px 0;
+    max-width: 90%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  body {
+    font-size: 17px;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .nav-header {
+    flex-direction: row;
+  }
+  
+  .nav-btn {
+    margin: 5%;
+  }
+  
+  .centered {
+    font-size: 25px;
+  }
+  
+  .feedback-container {
+    flex-direction: row;
+  }
+  
+  .feedback-form,
+  .feedback-section {
+    margin: 0;
+    max-width: 50%;
+  }
+}
+
+/* Utility classes for responsive design */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* Responsive text sizes */
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.2rem;
+}
+
+.text-xl {
+  font-size: 1.4rem;
+}
+
+.text-2xl {
+  font-size: 1.8rem;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+/* Responsive spacing */
+.p-sm {
+  padding: 10px;
+}
+
+.p-md {
+  padding: 20px;
+}
+
+.p-lg {
+  padding: 30px;
+}
+
+.m-sm {
+  margin: 10px;
+}
+
+.m-md {
+  margin: 20px;
+}
+
+.m-lg {
+  margin: 30px;
+}
+
+/* Responsive containers */
+.container-sm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+}

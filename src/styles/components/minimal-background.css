@@ -1,0 +1,78 @@
+/* Minimal, Rock-Solid Background Options */
+.minimal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Option 1: Clean, Simple Gradient */
+.clean-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #0a0a0a 25%,
+    #000000 50%,
+    #0a0a0a 75%,
+    #000000 100%
+  );
+}
+
+/* Option 2: Subtle Texture (no animations) */
+.subtle-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(74, 144, 226, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(74, 144, 226, 0.03) 0%, transparent 50%);
+  background-size: 800px 800px;
+}
+
+/* Option 3: Ultra minimal - just solid with slight variations */
+.ultra-simple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  background-image: 
+    linear-gradient(0deg, rgba(74, 144, 226, 0.02) 0%, transparent 100%),
+    linear-gradient(90deg, rgba(74, 144, 226, 0.01) 0%, transparent 100%);
+}
+
+/* Option 4: Just black with subtle noise */
+.noise-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(74, 144, 226, 0.01) 2px,
+      rgba(74, 144, 226, 0.01) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(74, 144, 226, 0.01) 2px,
+      rgba(74, 144, 226, 0.01) 4px
+    );
+}

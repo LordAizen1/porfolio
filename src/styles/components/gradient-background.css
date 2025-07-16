@@ -1,0 +1,235 @@
+/* Blue-Tinted Gradient Background with Subtle Animations */
+.gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Main Gradient Background */
+.main-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #0a0a1a 25%,
+    #050510 50%,
+    #0a0a1a 75%,
+    #000000 100%
+  );
+  animation: gradientShift 25s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #0a0a1a 25%,
+      #050510 50%,
+      #0a0a1a 75%,
+      #000000 100%
+    );
+  }
+  25% {
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #050510 25%,
+      #0a0a1a 50%,
+      #050510 75%,
+      #000000 100%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      135deg,
+      #0a0a1a 0%,
+      #000000 25%,
+      #050510 50%,
+      #000000 75%,
+      #0a0a1a 100%
+    );
+  }
+  75% {
+    background: linear-gradient(
+      135deg,
+      #050510 0%,
+      #0a0a1a 25%,
+      #000000 50%,
+      #0a0a1a 75%,
+      #050510 100%
+    );
+  }
+}
+
+/* Floating Elements */
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.floating-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(74, 144, 226, 0.06) 0%,
+    rgba(74, 144, 226, 0.02) 50%,
+    transparent 100%
+  );
+  filter: blur(60px);
+  animation: float 30s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 400px;
+  height: 400px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 300px;
+  height: 300px;
+  top: 60%;
+  right: 15%;
+  animation-delay: -10s;
+}
+
+.orb-3 {
+  width: 500px;
+  height: 500px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: -20s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-30px) translateX(20px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-60px) translateX(-10px);
+    opacity: 0.2;
+  }
+  75% {
+    transform: translateY(-30px) translateX(15px);
+    opacity: 0.4;
+  }
+}
+
+/* Breathing Overlay */
+.breathing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(74, 144, 226, 0.02) 0%,
+    transparent 70%
+  );
+  animation: breathe 15s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+/* Subtle pulse effect */
+.main-gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(74, 144, 226, 0.01) 50%,
+    transparent 100%
+  );
+  animation: pulse 20s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Accessibility: Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .main-gradient,
+  .floating-orb,
+  .breathing-overlay,
+  .main-gradient::after {
+    animation: none !important;
+  }
+  
+  .main-gradient {
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #0a0a1a 50%,
+      #000000 100%
+    );
+  }
+}
+
+/* Performance optimization for mobile */
+@media (max-width: 768px) {
+  .floating-orb {
+    animation-duration: 40s; /* Slower on mobile */
+  }
+  
+  .orb-3 {
+    display: none; /* Hide one orb on mobile */
+  }
+  
+  .breathing-overlay {
+    animation-duration: 20s;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .main-gradient {
+    background: #000000;
+  }
+  
+  .floating-orb,
+  .breathing-overlay {
+    display: none;
+  }
+}
