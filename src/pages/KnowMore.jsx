@@ -117,7 +117,7 @@ const KnowMore = () => {
             { name: 'Linux', icon: '/porfolio/images/linux.png' },
             { name: 'GitHub', icon: '/porfolio/images/github.png' },
             { name: 'Colab', icon: '/porfolio/images/colab.png' },
-            { name: 'Claude Chat', icon: '/porfolio/images/claude.png' },
+            { name: 'Claude Code', icon: '/porfolio/images/claude.png' },
             { name: 'ReactJS', icon: '/porfolio/images/reacjs.png' },
             { name: 'Firebase', icon: '/porfolio/images/firebase.png' },
             { name: 'NodeJS', icon: '/porfolio/images/nodejs.png' },

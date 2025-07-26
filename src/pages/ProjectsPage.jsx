@@ -50,12 +50,12 @@ const ProjectsPage = () => {
       description:
         'A fully functional game implementation demonstrating advanced object-oriented programming principles and software engineering best practices. Built using JavaFX, the game features smooth animations, collision detection, and comprehensive error handling. Includes extensive unit testing with JUnit to ensure code reliability and maintainability.<br /><br /><b>Technologies:</b> Java, JavaFX, JUnit, Object-Oriented Programming'
     },
-    {
-      title: 'Dungeon-Shell',
-      image: '/porfolio/images/cmd.png',
-      description:
-        'A sophisticated command-line shell implementation in C that replicates core Unix shell functionality. Features comprehensive command execution, pipeline processing, signal handling (SIGINT), and process monitoring with detailed logging of PIDs, execution times, and system resources. Demonstrates low-level system programming and operating system concepts.<br /><br /><b>Technologies:</b> C, Unix System Calls, Process Management, Signal Handling, Memory Management'
-    },
+    // {
+    //   title: 'Dungeon-Shell',
+    //   image: '/porfolio/images/cmd.png',
+    //   description:
+    //     'A sophisticated command-line shell implementation in C that replicates core Unix shell functionality. Features comprehensive command execution, pipeline processing, signal handling (SIGINT), and process monitoring with detailed logging of PIDs, execution times, and system resources. Demonstrates low-level system programming and operating system concepts.<br /><br /><b>Technologies:</b> C, Unix System Calls, Process Management, Signal Handling, Memory Management'
+    // },
     // {
     //   title: 'Task-Board-App',
     //   image: '/porfolio/images/task-board.png',
