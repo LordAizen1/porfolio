@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import PageTransition from './components/PageTransition';
 import Loading from './components/Loading';
-import GradientBackground from './components/GradientBackground';
+import ModernBackground from './components/ModernBackground';
 import './style.css';
 
 // Lazy load pages
@@ -66,8 +66,8 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router basename="/porfolio">
-      {/* Blue-Tinted Gradient Background */}
-      <GradientBackground />
+      {/* Modern Professional Background */}
+      <ModernBackground />
       
       {/* Content Wrapper (z-index: 1) */}
       <div className="content-wrapper">

@@ -8,7 +8,7 @@
 @import './styles/components/buttons.css';
 @import './styles/components/loading.css';
 @import './styles/components/modal.css';
-@import './styles/components/gradient-background.css';
+@import './styles/components/modern-background.css';
 
 /* Page-specific styles */
 @import './styles/pages/home.css';
