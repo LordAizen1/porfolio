@@ -56,19 +56,19 @@ const Home = () => {
           <div className="highlight-cards">
             {[
               {
-                title: 'Full-Stack Development',
+                title: 'AI-Powered Applications',
                 description:
-                  'Specializing in end-to-end web applications with React, Node.js, and modern frameworks. I build scalable, user-centric solutions that bridge frontend elegance with robust backend architecture.',
+                  'Building sophisticated platforms that integrate cutting-edge AI models like OpenAI\'s DALL-E 3, GPT-4o Vision, and Google\'s Veo 2.0. Creating intelligent systems for architectural visualization, document processing, and real-time content generation.',
               },
               {
-                title: 'Data Science & AI',
+                title: 'Enterprise Security & Privacy',
                 description:
-                  'Leveraging machine learning and data analysis to extract meaningful insights from complex datasets. Experienced with Python, TensorFlow, and cloud platforms for ML deployment.',
+                  'Developing enterprise-grade document sanitization tools with advanced NER systems and privacy-preserving technologies. Implementing theoretical privacy guarantees while maintaining document integrity for sensitive business data.',
               },
               {
-                title: 'Innovation & Growth',
+                title: 'Data Analytics & Visualization',
                 description:
-                  'Continuously exploring emerging technologies—from quantum computing to AI frameworks—to stay at the forefront of software development and deliver cutting-edge solutions.',
+                  'Transforming massive datasets into actionable insights through interactive visualizations. Expert in processing millions of records to reveal critical patterns and trends for data-driven decision making.',
               },
             ].map((card, index) => (
               <motion.div
