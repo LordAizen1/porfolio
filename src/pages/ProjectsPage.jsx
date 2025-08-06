@@ -24,11 +24,11 @@ const ProjectsPage = () => {
       link: 'https://ai-for-architects.com'
     },
     {
-      title: 'Document Sanitization Tool (DP-Fusion)',
+      title: 'Document Privacy (DP-Fusion)',
       image: '/porfolio/images/dp-fusion.png', // Placeholder image, update if you have a project-specific image
       description:
         'An enterprise-grade document sanitization platform that automatically removes sensitive information from business documents while maintaining document integrity. Built during my internship at Alpine Privacy, this solution processes multiple file formats (DOCX, PPTX, PDF, TXT) using advanced Named Entity Recognition (NER) systems including spaCy, BERT, and Flair. The platform implements DP-Fusion, a novel decoding strategy that provides theoretical privacy guarantees while ensuring all uploaded data is permanently deleted post-processing.<br /><br /><b>Technologies:</b> React 18.3 (TypeScript), Vite, Redux Toolkit, Tailwind CSS, Node.js, PyTorch, Transformers, Presidio, spaCy, FastAPI, Docker, Nginx',
-      link: 'https://spec-negotiations-multimedia-cod.trycloudflare.com/'
+      link: 'https://documentprivacy.com/'
     },
     {
       title: 'U.S. Lightning Strikes Analysis',
