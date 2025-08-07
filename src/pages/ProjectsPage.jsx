@@ -1,38 +1,54 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import ImageModal from '../components/ImageModal';
+import GalleryModal from '../components/GalleryModal';
+import { ImagenPersonFilterLevel } from 'firebase/vertexai';
 
 const ProjectsPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '' });
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const openModal = (imageSrc, imageAlt) => {
-    setSelectedImage({ src: imageSrc, alt: imageAlt });
+  const openModal = (project) => {
+    setSelectedProject(project);
     setModalOpen(true);
   };
 
   const closeModal = () => {
     setModalOpen(false);
+    setSelectedProject(null);
   };
   
   const projects = [
     {
       title: 'AI For Architects',
-      image: '/porfolio/images/ai-for-architects.png',
+      images: [
+        { src: '/porfolio/images/ai-for-architects2.png', alt: 'AI For Architects - Main Dashboard' },
+        { src: '/porfolio/images/ai-for-architects1.png', alt: 'AI For Architects - Generation Interface' },
+        { src: '/porfolio/images/ai-for-architects3.png', alt: 'AI For Architects - Results Showcase' }
+      ],
+      mainImage: '/porfolio/images/ai-for-architects1.png',
       description:
         'A comprehensive AI-powered platform that transforms architectural visualization through intelligent design generation and dynamic video creation. The application leverages cutting-edge AI models including OpenAIs DALL-E 3, GPT-4o Vision, and Googles Veo 2.0, Veo 3.0 to convert architectural concepts into photorealistic visual content. Key features include: advanced room customization with 15+ architectural styles, intelligent lighting and color controls, real-time image editing and enhancement, text-to-video generation for architectural walkthroughs, image-to-video conversion for dynamic presentations, portfolio-based style extraction using computer vision, and compressed thumbnail generation for optimized performance. The platform features enterprise-grade architecture with role-based access control, quota management systems, cross-origin video streaming, and scalable user management designed for professional architectural firms and design studios. <br /><br /><b>Technologies:</b> React 18, TailwindCSS, Node.js, Express.js, MongoDB, OpenAI API (DALL-E 3, GPT-4o Vision), Google Veo 2.0 API, FFmpeg, Sharp, JWT Authentication, Cloudflare Tunnels, Google Cloud Storage, Video Proxy Streaming',
       link: 'https://ai-for-architects.com'
     },
     {
       title: 'Document Privacy (DP-Fusion)',
-      image: '/porfolio/images/dp-fusion.png', // Placeholder image, update if you have a project-specific image
+      images: [
+        { src: '/porfolio/images/document-privacy2.png', alt: 'Document Privacy - Upload Interface' },
+        { src: '/porfolio/images/document-privacy1.png', alt: 'Document Privacy - Processing Results' }
+      ],
+      mainImage: '/porfolio/images/document-privacy1.png',
       description:
         'An enterprise-grade document sanitization platform that automatically removes sensitive information from business documents while maintaining document integrity. Built during my internship at Alpine Privacy, this solution processes multiple file formats (DOCX, PPTX, PDF, TXT) using advanced Named Entity Recognition (NER) systems including spaCy, BERT, and Flair. The platform implements DP-Fusion, a novel decoding strategy that provides theoretical privacy guarantees while ensuring all uploaded data is permanently deleted post-processing.<br /><br /><b>Technologies:</b> React 18.3 (TypeScript), Vite, Redux Toolkit, Tailwind CSS, Node.js, PyTorch, Transformers, Presidio, spaCy, FastAPI, Docker, Nginx',
       link: 'https://documentprivacy.com/'
     },
     {
       title: 'U.S. Lightning Strikes Analysis',
-      image: '/porfolio/images/tableau.png',
+      images: [
+        { src: '/porfolio/images/lightning-strike-analysis1.png', alt: 'U.S. Lightning Strikes - Dashboard' },
+        { src: '/porfolio/images/lightning-strike-analysis2.png', alt: 'U.S. Lightning Strikes - Heatmap' },
+        { src: '/porfolio/images/lightning-strike-analysis3.png', alt: 'U.S. Lightning Strikes - Time Series' }
+      ],
+      mainImage: '/porfolio/images/lightning-strike-analysis1.png',
       description:
         'A comprehensive data visualization project analyzing 13+ million U.S. lightning strike records (2009-2018) to uncover critical meteorological patterns. Developed interactive Tableau dashboards featuring time-series analysis, geospatial heatmaps, and comparative visualizations that reveal seasonal trends and geographic hotspots. The project demonstrates advanced data storytelling techniques and provides actionable insights for weather prediction and safety planning.<br /><br /><b>Technologies:</b> Tableau, Python, Data Analytics, Statistical Analysis',
       link: 'https://public.tableau.com/app/profile/md.kaif8168/viz/U_S_LightningStrikesStory/U_S_LightningStrikesStory'
@@ -113,19 +129,54 @@ const ProjectsPage = () => {
             </div>
             <div 
               className="project-image-container"
-              onClick={() => openModal(project.image, project.title)}
+              onClick={() => openModal(project)}
             >
-              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="card-stack-container">
+                {project.images ? (
+                  project.images.slice(0, 3).map((image, index) => (
+                    <motion.div
+                      key={index}
+                      className="stacked-image"
+                      initial={false}
+                      animate={{
+                        translateX: index * 15,
+                        translateY: index * 10,
+                        rotate: index * 3,
+                        zIndex: -index
+                      }}
+                    >
+                      <img 
+                        src={image.src} 
+                        alt={image.alt} 
+                        className="project-image"
+                      />
+                    </motion.div>
+                  ))
+                ) : (
+                  <div className="stacked-image">
+                    <img 
+                      src={project.image} 
+                      alt={project.title} 
+                      className="project-image"
+                    />
+                  </div>
+                )}
+                {project.images && project.images.length > 3 && (
+                  <div className="remaining-indicator">
+                    +{project.images.length - 3}
+                  </div>
+                )}
+              </div>
             </div>
           </motion.article>
         ))}
       </motion.section>
       
-      <ImageModal 
+      <GalleryModal 
         isOpen={modalOpen}
         onClose={closeModal}
-        imageSrc={selectedImage.src}
-        imageAlt={selectedImage.alt}
+        images={selectedProject?.images || (selectedProject ? [{ src: selectedProject.image, alt: selectedProject.title }] : [])}
+        projectTitle={selectedProject?.title}
       />
     </motion.div>
   );

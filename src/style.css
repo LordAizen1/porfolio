@@ -9,6 +9,7 @@
 @import './styles/components/loading.css';
 @import './styles/components/modal.css';
 @import './styles/components/modern-background.css';
+@import './styles/components/gallery-modal.css';
 
 /* Page-specific styles */
 @import './styles/pages/home.css';

@@ -1,0 +1,144 @@
+.gallery-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.gallery-modal-content {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #222;
+  border-bottom: 1px solid #333;
+}
+
+.gallery-modal-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.gallery-modal-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.gallery-modal-close:hover {
+  color: #ff4444;
+}
+
+.gallery-modal-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  height: 60vh;
+  background-color: #111;
+  overflow: hidden;
+}
+
+.main-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.gallery-nav-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-nav-button.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.gallery-nav-button.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  overflow-x: auto;
+  padding: 15px;
+  background-color: #222;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #666 #222;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.gallery-thumbnail {
+  flex: 0 0 100px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+  position: relative;
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-thumbnail.active {
+  border-color: #3498db;
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.gallery-thumbnail:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
