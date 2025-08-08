@@ -17,7 +17,7 @@ const ExperiencesPage = () => {
           <li>Utilized various tools such as NER, LLMs to accelerate model development and deployment.</li>
         </ul>
       `,
-      // No public link, so omit or add if available
+      link: 'https://alpineprivacy.com/'
     },
     {
       title: 'Developer - VeilCode Labs',
