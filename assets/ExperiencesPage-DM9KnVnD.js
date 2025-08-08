@@ -1,4 +1,4 @@
-import{j as e,m as t}from"./index-BHDkh7G1.js";const s=()=>{const a=[{title:"Intern, LLM Engineer",period:"June 2025–Present",description:`
+import{j as e,m as t}from"./index-BATRzTun.js";const s=()=>{const a=[{title:"Intern, LLM Engineer",period:"June 2025–Present",description:`
     <div>
       <strong>Company:</strong> Alpine Privacy<br/>
       <em>Alpine Privacy is an early-stage US/UAE based startup focused on privacy-first AI solutions.</em>
@@ -8,7 +8,7 @@ import{j as e,m as t}from"./index-BHDkh7G1.js";const s=()=>{const a=[{title:"Int
           <li>Contributed to the development of scalable AI pipelines in a fast-paced startup environment.</li>
           <li>Utilized various tools such as NER, LLMs to accelerate model development and deployment.</li>
         </ul>
-      `},{title:"Developer - VeilCode Labs",period:"Jan 2025-Mar 2025",description:`
+      `,link:"https://alpineprivacy.com/"},{title:"Developer - VeilCode Labs",period:"Jan 2025-Mar 2025",description:`
       <div>
         <strong>Institution:</strong> IIIT-Delhi<br/>
       </div>
