@@ -23,7 +23,8 @@ const ProjectsPage = () => {
       images: [
         { src: '/porfolio/images/ai-for-architects2.png', alt: 'AI For Architects - Main Dashboard' },
         { src: '/porfolio/images/ai-for-architects1.png', alt: 'AI For Architects - Generation Interface' },
-        { src: '/porfolio/images/ai-for-architects3.png', alt: 'AI For Architects - Results Showcase' }
+        { src: '/porfolio/images/ai-for-architects3.png', alt: 'AI For Architects - Results Showcase' },
+        { src: '/porfolio/images/ai-for-architects4.png', alt: 'AI For Architects - Gallery Showcase'}
       ],
       mainImage: '/porfolio/images/ai-for-architects1.png',
       description:
