@@ -19,6 +19,35 @@ const ProjectsPage = () => {
   
   const projects = [
     {
+      title: 'Classical Cipher Identification Using Machine Learning',
+      images: [
+        { src: '/porfolio/images/iiitd.png', alt: 'IIIT Delhi Logo' }
+      ],
+      mainImage: '/porfolio/images/iiitd.png',
+      description: `
+        <div class="project-header">
+          <strong>BTech Project (BTP) under Dr. Ravi Anand at IIIT-Delhi</strong>
+          <span class="project-period">Aug 2025 - Present</span>
+        </div>
+        <p>Training machine learning models to automatically identify classical cipher types from ciphertext using statistical and structural patterns.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Analyzes distinct patterns introduced by different classical ciphers in encrypted text:
+            <ul>
+              <li>Caesar cipher - preserved but shifted letter frequencies</li>
+              <li>Vigenère cipher - smoothed frequency distributions across alphabets</li>
+              <li>Substitution ciphers - maintained but permuted frequency distributions</li>
+              <li>Transposition ciphers - preserved frequencies with disrupted n-gram structures</li>
+            </ul>
+          </li>
+          <li>Implements automated cryptanalysis using machine learning to reverse-engineer encryption methods</li>
+          <li>Plans to scale for multiple languages including Mandarin and Urdu</li>
+        </ul>
+      `,
+      githubLink: '',
+      demoLink: 'https://iiitd.ac.in/'
+    },
+    {
       title: 'AI For Architects',
       images: [
         { src: '/porfolio/images/ai-for-architects1.png', alt: 'AI For Architects - Main Dashboard' },

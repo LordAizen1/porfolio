@@ -49,19 +49,19 @@ const ExperiencesPage = () => {
       `,
       link: 'https://github.com/NalishJain/IIITD-PYQs/pull/44'
     },
-    {
-      title: 'Open Source Contributor — Gatsby.js',
-      period: 'May 2025',
-      description: `
-        <ul>
-          <li>Identified and reported a critical navigation error in the Gatsby.js website where external URLs were incorrectly treated as internal paths causing 404 errors</li>
-          <li>Provided detailed bug report with reproduction steps, expected vs. actual behavior, and browser console evidence</li>
-          <li>Issue was recognized by the Gatsby.js team and tagged for triage</li>
-          <li>GitHub Issue: <a href="https://github.com/gatsbyjs/gatsby/issues/39296" target="_blank" rel="noopener noreferrer">#39296</a></li>
-        </ul>
-      `,
-      link: 'https://github.com/gatsbyjs/gatsby/issues/39296'
-    },
+    // {
+    //   title: 'Open Source Contributor — Gatsby.js',
+    //   period: 'May 2025',
+    //   description: `
+    //     <ul>
+    //       <li>Identified and reported a critical navigation error in the Gatsby.js website where external URLs were incorrectly treated as internal paths causing 404 errors</li>
+    //       <li>Provided detailed bug report with reproduction steps, expected vs. actual behavior, and browser console evidence</li>
+    //       <li>Issue was recognized by the Gatsby.js team and tagged for triage</li>
+    //       <li>GitHub Issue: <a href="https://github.com/gatsbyjs/gatsby/issues/39296" target="_blank" rel="noopener noreferrer">#39296</a></li>
+    //     </ul>
+    //   `,
+    //   link: 'https://github.com/gatsbyjs/gatsby/issues/39296'
+    // },
     
     // {
     //   title: 'Open Source Contributor — Tekdi Technologies (Teachers App on GitHub)',
