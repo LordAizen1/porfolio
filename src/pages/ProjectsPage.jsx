@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import GalleryModal from '../components/GalleryModal';
 import { ImagenPersonFilterLevel } from 'firebase/vertexai';
+import { line } from 'framer-motion/client';
 
 const ProjectsPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -72,6 +73,18 @@ const ProjectsPage = () => {
       link: 'https://documentprivacy.com/'
     },
     {
+      title: 'FinSight-NLP-App',
+      images: [
+        { src: '/porfolio/images/finsight1.png', alt: 'FinSight - Screen'},
+        { src: '/porfolio/images/finsight2.png', alt: 'FinSight - Screen'},
+        { src: '/porfolio/images/finsight3.png', alt: 'FinSight - Screen'}
+      ],
+      mainImage: '/porfolio/images/finsight1.png',
+      description: 
+      'A web app that performs NLP on financial text using a custom-trained spaCy model. It identifies custom entities (Stocks, Financial Events) and analyzes sentiment with VADER. The backend is built with Python and Flask, serving an interactive UI with a color-coded legend for the analysis.',
+      link: 'https://finsight-app-md6v.onrender.com/'
+    },
+    {
       title: 'U.S. Lightning Strikes Analysis',
       images: [
         { src: '/porfolio/images/lightning-strike-analysis1.png', alt: 'U.S. Lightning Strikes - Dashboard' },
@@ -90,12 +103,12 @@ const ProjectsPage = () => {
         'A sophisticated Android application that combines document scanning capabilities with real-time landmark recognition using advanced machine learning. Built with modern Android development practices, the app features an intuitive interface powered by Jetpack Compose, TensorFlow Lite for efficient on-device ML inference, and automated PDF generation for scanned documents.<br /><br /><b>Technologies:</b> Kotlin, Jetpack Compose, TensorFlow Lite, CameraX, ML Kit'
     },
   
-    {
-      title: 'StickHero',
-      image: '/porfolio/images/stickhero.png',
-      description:
-        'A fully functional game implementation demonstrating advanced object-oriented programming principles and software engineering best practices. Built using JavaFX, the game features smooth animations, collision detection, and comprehensive error handling. Includes extensive unit testing with JUnit to ensure code reliability and maintainability.<br /><br /><b>Technologies:</b> Java, JavaFX, JUnit, Object-Oriented Programming'
-    },
+    // {
+    //   title: 'StickHero',
+    //   image: '/porfolio/images/stickhero.png',
+    //   description:
+    //     'A fully functional game implementation demonstrating advanced object-oriented programming principles and software engineering best practices. Built using JavaFX, the game features smooth animations, collision detection, and comprehensive error handling. Includes extensive unit testing with JUnit to ensure code reliability and maintainability.<br /><br /><b>Technologies:</b> Java, JavaFX, JUnit, Object-Oriented Programming'
+    // },
     // {
     //   title: 'Dungeon-Shell',
     //   image: '/porfolio/images/cmd.png',
