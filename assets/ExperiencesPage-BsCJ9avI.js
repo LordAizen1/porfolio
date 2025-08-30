@@ -1,4 +1,4 @@
-import{j as e,m as t}from"./index-DbB_2DOZ.js";const s=()=>{const a=[{title:"Intern, LLM Engineer",period:"June 2025–Present",description:`
+import{j as e,m as t}from"./index-B3xWpUj6.js";const s=()=>{const a=[{title:"Intern, LLM Engineer",period:"June 2025 - Aug 2025",description:`
     <div>
       <strong>Company:</strong> Alpine Privacy<br/>
       <em>Alpine Privacy is an early-stage US/UAE based startup focused on privacy-first AI solutions.</em>
