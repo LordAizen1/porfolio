@@ -5,7 +5,7 @@ const ExperiencesPage = () => {
   const experiences = [
         {
       title: 'Intern, LLM Engineer',
-      period: 'June 2025–Present',
+      period: 'June 2025 - Aug 2025',
       description: `
     <div>
       <strong>Company:</strong> Alpine Privacy<br/>
