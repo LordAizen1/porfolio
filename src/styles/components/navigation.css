@@ -4,30 +4,34 @@
 }
 
 .desktop-nav {
-  border: 1px solid var(--primary-color);
-  border-left: none;
-  border-right: none;
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   height: 27px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5% 0;
+  padding: 0.8rem 2rem;
+  margin: 1rem 0;
   transition: var(--transition-fast);
+  box-shadow: var(--shadow-primary);
 }
 
 .nav-btn {
   font-weight: 600;
-  padding: 10px 10px;
-  margin: 5%;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  padding: 8px 16px;
+  margin: 0 8px;
   display: flex;
+  border-radius: var(--border-radius);
   transition: var(--transition-fast);
+  color: var(--text-secondary);
 }
 
 .nav-btn:hover {
-  transform: scale(1.05);
+  background-color: var(--card-background-hover);
   color: var(--primary-color);
+  transform: translateY(-1px);
 }
 
 /* Hamburger Menu */
@@ -58,10 +62,12 @@
   right: 0;
   width: 300px;
   height: 100vh;
-  background-color: rgba(26, 26, 26, 0.98);
+  background-color: var(--card-background);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid var(--border-color);
   padding: 80px 30px 30px;
   z-index: 1000;
-  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-large);
   overflow-y: auto;
 }
 
@@ -69,17 +75,18 @@
   display: block;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   padding: 15px 20px;
   margin: 10px 0;
   text-decoration: none;
   border-radius: var(--border-radius);
   transition: var(--transition-fast);
-  background-color: rgba(74, 144, 226, 0.1);
+  background-color: var(--card-background-light);
+  border: 1px solid var(--border-color);
 }
 
 .mobile-nav-btn:hover {
-  background-color: rgba(74, 144, 226, 0.2);
+  background-color: var(--card-background-hover);
   color: var(--primary-color);
   transform: translateX(-5px);
 }
@@ -103,7 +110,10 @@ header {
 
 .logo-text {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: bold;
   margin: 20px 0;
   letter-spacing: 2px;

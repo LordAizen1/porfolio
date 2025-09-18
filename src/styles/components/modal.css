@@ -45,7 +45,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +68,8 @@
   max-height: 90vh;
   object-fit: contain;
   border-radius: var(--border-radius);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-large);
+  border: 1px solid var(--border-color);
 }
 
 .image-modal-close {
@@ -87,10 +89,11 @@
   justify-content: center;
   transition: var(--transition-fast);
   font-family: 'Gilroy', sans-serif;
+  box-shadow: var(--shadow-primary);
 }
 
 .image-modal-close:hover {
-  background-color: #357ABD;
+  background-color: var(--secondary-color);
   transform: scale(1.1);
 }
 

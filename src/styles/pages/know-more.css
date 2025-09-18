@@ -1,6 +1,8 @@
 /* About Me Box - Card Theme */
 .aboutme-box {
   background-color: var(--card-background);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow-large);
   padding: 30px;
@@ -9,8 +11,14 @@
   margin-right: auto;
   max-width: 700px;
   font-size: 1.1rem;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   transition: var(--transition-fast);
+  line-height: 1.7;
+}
+
+.aboutme-box:hover {
+  background-color: var(--card-background-hover);
+  transform: translateY(-2px);
 }
 /* Know More Page Styles */
 .know-more {
@@ -54,7 +62,15 @@
   margin: 0 auto 40px;
   padding: 20px;
   background-color: var(--card-background);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
+  transition: var(--transition-fast);
+}
+
+.know-more section:hover {
+  background-color: var(--card-background-hover);
+  transform: translateY(-2px);
 }
 
 .know-more section h2 {
@@ -75,7 +91,9 @@
 .know-more .language,
 .know-more .technology,
 .know-more .achievement {
-  background-color: var(--card-background-light);
+  background-color: var(--card-background);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
   padding: 20px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-primary);
@@ -91,7 +109,9 @@
 .know-more .language:hover,
 .know-more .technology:hover,
 .know-more .achievement:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  background-color: var(--card-background-hover);
+  box-shadow: var(--shadow-large);
 }
 
 .know-more .language img,
@@ -108,7 +128,7 @@
 .know-more .technology p,
 .know-more .achievement p {
   font-size: 1.2rem;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   margin: 0;
   text-align: center;
 }

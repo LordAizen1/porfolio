@@ -40,7 +40,7 @@ const Home = () => {
           <p style={{ fontSize: '1.5rem', marginTop: '10px' }}>
             I'm a <TypeWriter texts={titles} typeSpeed={80} deleteSpeed={40} pauseDuration={1500} />
           </p>
-          <p style={{ marginTop: '20px' }}>
+          <p style={{ marginTop: '20px', fontSize: '1.1rem', lineHeight: '1.6' }}>
             Welcome to my portfolio—a showcase of innovative projects, technical expertise, and my passion for building impactful software solutions.
           </p>
         </motion.div>
