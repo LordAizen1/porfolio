@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { database } from "../firebase"; 
-import { ref, get, set } from "firebase/database"; 
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,46 +6,27 @@ const Footer = () => {
   const footerRef = useRef(null);
 
   useEffect(() => {
-    const isNewVisitor = localStorage.getItem("visitedBefore");
+    // Simple localStorage-based visitor counting
+    const initializeVisitorCount = () => {
+      try {
+        const isNewVisitor = !localStorage.getItem("visitedBefore");
+        let currentCount = parseInt(localStorage.getItem("visitorCount") || "0");
 
-    if (!isNewVisitor) {
-      // If visitor is new, mark them as visited and update Firebase count
-      localStorage.setItem("visitedBefore", "true");
-
-      const updateVisitorCount = async () => {
-        const countRef = ref(database, "visitorCount");
-        try {
-          const snapshot = await get(countRef);
-          if (snapshot.exists()) {
-            const currentCount = snapshot.val();
-            setVisitorCount(currentCount);
-            await set(countRef, currentCount + 1); // Only increment for new visitors
-          } else {
-            await set(countRef, 1);
-            setVisitorCount(1);
-          }
-        } catch (error) {
-          console.error("Error updating visitor count:", error);
+        if (isNewVisitor) {
+          // New visitor - increment count
+          currentCount += 1;
+          localStorage.setItem("visitedBefore", "true");
+          localStorage.setItem("visitorCount", currentCount.toString());
         }
-      };
 
-      updateVisitorCount();
-    } else {
-      // If the visitor has been here before, just fetch the count without incrementing
-      const fetchVisitorCount = async () => {
-        const countRef = ref(database, "visitorCount");
-        try {
-          const snapshot = await get(countRef);
-          if (snapshot.exists()) {
-            setVisitorCount(snapshot.val());
-          }
-        } catch (error) {
-          console.error("Error fetching visitor count:", error);
-        }
-      };
+        setVisitorCount(currentCount);
+      } catch (error) {
+        console.error("Error with visitor count:", error);
+        setVisitorCount(1); // Fallback value
+      }
+    };
 
-      fetchVisitorCount();
-    }
+    initializeVisitorCount();
   }, []);
 
   useEffect(() => {
