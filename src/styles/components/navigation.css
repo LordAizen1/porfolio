@@ -31,7 +31,20 @@
 .nav-btn:hover {
   background-color: var(--card-background-hover);
   color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Active navigation state */
+.nav-btn.active {
+  background-color: var(--primary-color);
+  color: white;
   transform: translateY(-1px);
+}
+
+/* Smooth focus states for accessibility */
+.nav-btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 /* Hamburger Menu */

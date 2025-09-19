@@ -19,9 +19,21 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 
 function AnimatedRoutes() {
   const location = useLocation();
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  // Show loading indicator during route changes
+  React.useEffect(() => {
+    setIsLoading(true);
+    const timer = setTimeout(() => setIsLoading(false), 100);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
   
   return (
-    <AnimatePresence mode="wait">
+    <>
+      <AnimatePresence>
+        {isLoading && <Loading minimal />}
+      </AnimatePresence>
+      <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={
           <Suspense fallback={<Loading />}>
@@ -60,6 +72,7 @@ function AnimatedRoutes() {
         } />
       </Routes>
     </AnimatePresence>
+    </>
   );
 }
 
@@ -72,6 +85,7 @@ function App() {
       {/* Content Wrapper (z-index: 1) */}
       <div className="content-wrapper">
         <Header />
+        <NavigationIndicator />
         <Navbar />
         <AnimatedRoutes />
         <Footer />

@@ -83,3 +83,22 @@
 .transition-all {
   transition: all var(--transition-fast);
 }
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+  }
+  
+  .transition-fast,
+  .transition-slow,
+  .transition-all {
+    transition: none !important;
+  }
+  
+  .hover-scale:hover,
+  .hover-lift:hover,
+  .hover-float:hover {
+    transform: none !important;
+  }
+}

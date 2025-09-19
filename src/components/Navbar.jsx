@@ -16,6 +16,15 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  // Auto-close menu on route change
+  React.useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  // Scroll to top on route change
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
   return (
     <div id="nav-header">
       {/* Hamburger Icon */}

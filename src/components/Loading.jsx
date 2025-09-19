@@ -2,7 +2,28 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SkeletonLoader from './SkeletonLoader';
 
-const Loading = ({ variant = 'default', showSkeleton = false }) => {
+const Loading = ({ variant = 'default', showSkeleton = false, minimal = false }) => {
+  // Minimal loading for page transitions
+  if (minimal) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="minimal-loading"
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '3px',
+          background: 'linear-gradient(90deg, var(--primary-color), var(--secondary-color))',
+          zIndex: 9999
+        }}
+      />
+    );
+  }
+
   if (showSkeleton) {
     return (
       <div className="loading-container">
