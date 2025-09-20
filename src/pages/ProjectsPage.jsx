@@ -174,42 +174,21 @@ const ProjectsPage = () => {
               className="project-image-container"
               onClick={() => openModal(project)}
             >
-              <div className="card-stack-container">
-                {project.images ? (
-                  project.images.slice(0, 3).map((image, index) => (
-                    <motion.div
-                      key={index}
-                      className="stacked-image"
-                      initial={false}
-                      animate={{
-                        translateX: index * 15,
-                        translateY: index * 10,
-                        rotate: index * 3,
-                        zIndex: -index
-                      }}
-                    >
-                      <img 
-                        src={image.src} 
-                        alt={image.alt} 
-                        className="project-image"
-                      />
-                    </motion.div>
-                  ))
-                ) : (
-                  <div className="stacked-image">
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
-                      className="project-image"
-                    />
-                  </div>
-                )}
-                {project.images && project.images.length > 3 && (
-                  <div className="remaining-indicator">
-                    +{project.images.length - 3}
-                  </div>
-                )}
-              </div>
+              <img 
+                src={project.images ? project.images[0].src : project.image}
+                alt={project.images ? project.images[0].alt : project.title}
+                className="project-main-image"
+              />
+              <div className="image-overlay" />
+              <div className="zoom-hint">Click to view gallery</div>
+              {project.images && project.images.length > 1 && (
+                <div className="gallery-indicator">
+                  <svg className="gallery-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                  </svg>
+                  {project.images.length} images
+                </div>
+              )}
             </div>
           </motion.article>
         ))}
