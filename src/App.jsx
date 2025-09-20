@@ -8,7 +8,6 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 import PageTransition from './components/PageTransition';
 import Loading from './components/Loading';
 import ModernBackground from './components/ModernBackground';
-import NavigationIndicator from './components/NavigationIndicator';
 import './style.css';
 
 // Lazy load pages
@@ -86,7 +85,6 @@ function App() {
       {/* Content Wrapper (z-index: 1) */}
       <div className="content-wrapper">
         <Header />
-        <NavigationIndicator />
         <Navbar />
         <AnimatedRoutes />
         <Footer />
